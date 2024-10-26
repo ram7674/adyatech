@@ -1,0 +1,209 @@
+.hero_section {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the video covers the section without distorting */
+    z-index: -1; /* Places the video behind the content */
+
+  }
+  
+  .hero_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures content is above the video */
+    text-align: center; /* Centers the text horizontally */
+    color: white; /* Adjust this depending on your design */
+  }
+
+  .hero_content_card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero_gif_card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      height: 400px;
+      z-index: 9;
+    }
+
+  }
+
+  .hero_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 0; /* Keeps the overlay behind the content */
+  }
+
+
+  .what-main-cardSec{
+    padding: 70px 0px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .what-sectionCard {
+
+    background-color: rgb(199, 168, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 20px 10px;
+
+    img {
+      height: 250px;
+    }
+
+    .what-card {
+      display: flex;
+      justify-content: center;
+      align-items: self-start;
+      flex-direction: column;
+    }
+
+  }
+
+
+
+  .welcome-MainBg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 60px;
+      color: #fff;
+      height: 30px;
+    }
+  }
+
+  
+
+  .welcome-card {
+    background-color: aqua;
+    padding: 30px 50px;
+    height: 250px;
+    margin-bottom: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+
+  .contact-mainhomebg {
+    background-image: url('/assets/hero-sec-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fix the background image */
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .contact-home-page {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    border-radius: 8px;
+
+    button {
+      border: none;
+      padding: 13px;
+      border-radius: 10px;
+      width: 150px;
+      font-size: 17px;
+      font-weight: 700;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+
+  }
+  
+
+
+  .why-chooseMainBg {
+    height: 600px;
+    padding: 60px 0px;
+    
+    h1 {
+      margin-bottom: 50px;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+
+  .why-choose-parent {
+
+    height: 320px;
+
+    .why-chooose-card {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        height: 100px;
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        text-align: center;
+        margin: 0px;
+      }
+
+    }
+}
+
+.why-choose-parent2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

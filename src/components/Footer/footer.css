@@ -1,0 +1,53 @@
+.footer_mainSec {
+    padding: 50px 0px 30px 0px;
+}
+
+.footer-logo {
+    height: 86px;
+}
+
+.footer_aitem_align{
+    display: flex;
+    justify-content: start;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.footer_desc {
+    width: 90%;
+}
+
+.footer_items {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 4px 0px;
+    a{
+        color: #fff !important;
+        text-decoration: none;
+        
+    }
+}
+
+.list-unstyled {
+
+    li{
+        margin: 10px 0px;
+        a{
+            text-decoration: none;
+        }
+       
+    }
+
+}
+
+.socila_linktit{
+    margin-bottom: 20px;
+}
+ 
+.footer_icons {
+    background-color: transparent;
+    a {
+    cursor: pointer;
+    }
+}

@@ -1,0 +1,93 @@
+.about-mainbg {
+    background-color: aqua;
+}
+
+.about_mainCard {
+    padding: 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-cardImg {
+    width: 40%;
+
+    img {
+        height: 300px;
+    }
+}
+
+.about_insideCard {
+    width: 60%;
+}
+
+
+
+
+.vision-mainbg {
+    padding: 70px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.vision{
+    border: 2px solid #6DB0E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 300px;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.vision-cardimg {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100px;
+    }
+
+}
+.vision-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+
+    p {
+        text-align: center;
+    }
+
+}
+
+.vision:hover {
+    border-color: #589543; /* Change border color on hover */
+    background-color: #f0f8e7; /* Change background color on hover */
+    color: #1b5e20; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  
+
+  .vision:hover .vision-cardimg img {
+    opacity: 0.9; /* Add a subtle effect to the image */
+  }
+  
+  .vision-text h4, .vision-text p {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .vision:hover .vision-text h4 {
+    color: #004d40; /* Change heading color on hover */
+  }
+  
+  .vision:hover .vision-text p {
+    color: #33691e; /* Change paragraph color on hover */
+  }

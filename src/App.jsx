@@ -1,0 +1,32 @@
+import React from 'react';
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Careers from './pages/Careers/Careers';
+import Contact from './pages/Contact/Contact';
+import ItStaffing from './pages/ItStaffing/ItStaffing';
+import DataScience from './pages/DataScience/DataScience';
+import WebDevelopment from './pages/WebDevelopment/WebDevelopment';
+import MobileApplications from './pages/MobileApplications/MobileApplications';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/careers' element={<Careers/>} />
+        <Route path='/careers' element={<Contact/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/services/it-staffing-consulting' element={<ItStaffing/>} />
+        <Route path='/services/data-science' element={<DataScience/>} />
+        <Route path='/services/web-development' element={<WebDevelopment/>} />
+        <Route path='/services/mobile-applications' element={<MobileApplications/>} />
+
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
