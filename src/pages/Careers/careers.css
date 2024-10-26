@@ -1,0 +1,20 @@
+.career-banner {
+    background-image: url("../../../public/assets/services-banner.jpg");
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
+
+.career-card {
+    padding: 60px;
+}

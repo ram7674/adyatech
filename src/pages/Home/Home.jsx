@@ -5,6 +5,7 @@ import "./home.css";
 import service1 from "/assets/digital_signaged.png";
 import experience from "/assets/years-of-it-experience.jpg";
 
+
 const Home = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Home = () => {
       <div className="container-fluid hero_section">
         <div className="row">
           {/* Video section */}
-          <div className="col-12 wow fadeInRight">
+          <div className="col-12">
             <video className="video-bg" autoPlay muted loop>
               <source src="/assets/hero-sec-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -51,7 +52,7 @@ const Home = () => {
           <h1>Welcome To Adyah Tech</h1>
             <div className="col-lg-10">
               
-              <div className="welcome-card">
+              <div className="welcome-card" data-aos="zoom-in">
                 <h3>Empowering Your Business with Cutting-Edge IT Solutions</h3>
                 <p>
                   At Adyah Tech, we provide innovative IT staffing, consulting,
@@ -71,7 +72,7 @@ const Home = () => {
           <div className="row">
             <h1>What We Do</h1>
 
-            <div className="col-6  wow fadeInLeft">
+            <div className="col-6" data-aos="fade-right">
               <div className="what-sectionCard">
                 <img
                   src={service1}
@@ -88,7 +89,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-6  wow fadeInLeft">
+            <div className="col-6" data-aos="fade-left">
               <div className="what-sectionCard">
                 <img
                   src={service1}
@@ -105,7 +106,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-6" data-aos="fade-up">
               <div className="what-sectionCard">
                 <img
                   src={service1}
@@ -122,7 +123,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="col-6">
+            <div className="col-6" data-aos="fade-up">
               <div className="what-sectionCard">
                 <img
                   src={service1}
