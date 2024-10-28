@@ -10,7 +10,9 @@ const Clients = () => {
       <Header />
 
       {/* banner */}
-      <div className="container-fluid clients-mainbg"></div>
+      <div className="container-fluid clients-banner">
+        <span>Clients</span>
+      </div>
 
       {/* clients content */}
       <div className="container">

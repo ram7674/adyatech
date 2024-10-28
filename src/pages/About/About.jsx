@@ -3,13 +3,17 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import aboutImg from "/assets/about-page.jpg";
 import "./about.css";
-import visionImg from '../../../public/assets/vision.png'
+import visionImg from "../../../public/assets/vision.png";
 
 const About = () => {
   return (
     <>
       {/* navbar */}
       <Header />
+
+      <div className="container-fluid about-banner">
+        <span>About Us</span>
+      </div>
 
       {/* above page */}
       <div className="container-fluid about-mainbg">
@@ -21,10 +25,9 @@ const About = () => {
                   <img src={aboutImg} alt="About Us image" />
                 </div>
                 <div className="about_insideCard">
-                  <h1>About Us</h1>
                   <h3>
-                    Adyah Tech: "Your Trusted Partner for Comprehensive IT
-                    Solutions and Consulting"
+                    Adyah Tech: Your Trusted Partner for Comprehensive IT
+                    Solutions and Consulting
                   </h3>
                   <p>
                     Adyah Tech is an IT solutions and technology consulting firm
@@ -48,7 +51,6 @@ const About = () => {
 
       <div className="container vision-mainbg">
         <div className="row">
-
           <div className="col-4">
             <div className="vision">
               <div className="vision-cardimg">
@@ -56,7 +58,10 @@ const About = () => {
               </div>
               <div className="vision-text">
                 <h4>Vision</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid eligendi eum minus.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  aliquid eligendi eum minus.
+                </p>
               </div>
             </div>
           </div>
@@ -68,7 +73,10 @@ const About = () => {
               </div>
               <div className="vision-text">
                 <h4>Mission</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid eligendi eum minus.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  aliquid eligendi eum minus.
+                </p>
               </div>
             </div>
           </div>
@@ -80,11 +88,13 @@ const About = () => {
               </div>
               <div className="vision-text">
                 <h4>Values</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid eligendi eum minus.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                  aliquid eligendi eum minus.
+                </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 

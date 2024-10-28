@@ -15,7 +15,7 @@ const Header = () => {
     <Navbar expand="lg" className="navbar_mainContainer">
       <Container fluid className="nav_CardContainer">
         <Navbar.Brand>
-          <img src={logoImage} alt="" className="logo" />
+        <NavLink to="/"><img src={logoImage} alt="Adyatech Logo" className="logo" /></NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">

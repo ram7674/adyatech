@@ -7,6 +7,7 @@ import experience from "/assets/years-of-it-experience.jpg";
 
 
 const Home = () => {
+  
   return (
     <>
       {/* navbar */}
@@ -46,7 +47,7 @@ const Home = () => {
       </div>
 
       {/* welcome */}
-      <div className="container-fluid" style={{background: "#1c8ac9"}}>
+      <div className="container-fluid welcome-MainBg-full">
         <div className="container">
           <div className="row welcome-MainBg">
           <h1>Welcome To Adyah Tech</h1>
@@ -151,16 +152,16 @@ const Home = () => {
               <h2>
                 Ready to take your business to the next level? Let's talk!
               </h2>
-              <button>CONTACT US</button>
+              <button className="home-btn">CONTACT US</button>
             </div>
           </div>
         </div>
       </div>
 
       {/* why choose us */}
-      <div className="container-fluid">
+      <div className="container-fluid why-chooseMainBg">
         <div className="container">
-          <div className="row why-chooseMainBg">
+          <div className="row">
             <h1>Why Choose Us</h1>
 
             {/* card1 */}

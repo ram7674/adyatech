@@ -14,15 +14,22 @@
     z-index: -1; /* Places the video behind the content */
 
   }
+
+  h1 {
+    color: #233f77;
+    font-size: 38px;
+    font-weight: 700;
+  }
   
   .hero_content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Ensures content is above the video */
-    text-align: center; /* Centers the text horizontally */
-    color: white; /* Adjust this depending on your design */
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
   }
 
   .hero_content_card {
@@ -31,7 +38,20 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+
+    h1 {
+      color: #1c8ac9;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      margin: 0px;
+      font-size: 20px;
+    }
+
   }
+
 
   .hero_gif_card {
     width: 50%;
@@ -93,25 +113,28 @@
   }
 
 
+  .welcome-MainBg-full{
+    background-color: #f0f4f8;
+  }
 
   .welcome-MainBg{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 70px 0px;
+    
 
     h1 {
       text-align: center;
       margin-bottom: 60px;
-      color: #fff;
-      height: 30px;
     }
   }
 
   
 
   .welcome-card {
-    background-color: aqua;
+    background-color: #233f77;
+    color: #fff;
     padding: 30px 50px;
     height: 250px;
     margin-bottom: 20px;
@@ -121,8 +144,19 @@
     border-bottom-right-radius: 8px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+
+    p {
+      text-align: center;  
+      font-size: 18px;
+    }
+
+  }
+
+  .welcome-card:hover {
+    background-color: #8cbe41;
+    color: #f0f4f8;
   }
 
 
@@ -132,7 +166,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fix the background image */
-    min-height: 50vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,38 +178,35 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 60px;
     border-radius: 8px;
-
-    button {
-      border: none;
-      padding: 13px;
-      border-radius: 10px;
-      width: 150px;
-      font-size: 17px;
-      font-weight: 700;
-      margin-top: 15px;
-      letter-spacing: 1px;
-    }
-
+  }
+  .home-btn {
+    padding: 13px;
+    border-radius: 10px;
+    width: 150px !important;
+    font-size: 17px;
+    margin-top: 15px;
+    background: linear-gradient(45deg, #8cbe41, #034ea1); /* Gradient colors */
+    border: 1px solid #cfcfcf !important;
   }
   
 
 
   .why-chooseMainBg {
+    background-color: #f0f4f8;
     height: 600px;
     padding: 60px 0px;
     
     h1 {
       margin-bottom: 50px;
       text-align: center;
-      line-height: 40px;
     }
   }
 
   .why-choose-parent {
-
     height: 320px;
 
     .why-chooose-card {
+      background-color: #fff;
       box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
       border: none;
       border-radius: 10px;
@@ -192,6 +223,7 @@
 
       h4 {
         font-size: 20px;
+        color: #589543;
       }
 
       p {
@@ -206,4 +238,23 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-exit-active {
+  opacity: 0;
 }

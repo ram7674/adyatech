@@ -1,57 +1,60 @@
-import React, { useState } from "react";
-import emailjs from "emailjs-com"; // Import EmailJS
+import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./contact.css";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
     message: "",
     service: "",
-    gender: "", 
   });
 
+  const form = useRef();
+  const toast = useRef();
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    // Replace with your EmailJS user ID, service ID, and template ID
-    const serviceID = "service_q1oznbs";
-    const templateID = "__ejs-test-mail-service__";
-    const userID = "7hqPKLGR6oPG4vOm6";
-
-
-    // Send email using EmailJS
     emailjs
-      .send(serviceID, templateID, formData, userID)
-      .then((response) => {
-        console.log("Email sent successfully!", response.status, response.text);
-        // Optionally reset form fields
-        setFormData({
-          name: "",
-          email: "",
-          phoneNumber: "",
-          message: "",
-          service: "",
-          gender: "",
-        });
-      })
-      .catch((error) => {
-        console.error("Failed to send email:", error);
-      });
+      .sendForm('service_q1oznbs', 'template_hwumd7k', form.current, '7hqPKLGR6oPG4vOm6')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          window.alert('Email sent successfully!'); // Alert message on success;
+
+          // Reset form after successful submission
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+            service: "",
+            // gender: "", // Uncomment if you need this
+          });
+        },
+        (error) => {
+          console.error('FAILED...', error.text);
+          window.alert('Failed to send email. Please try again.');
+        }
+      );
   };
 
   return (
     <>
+
+      {/* Navbar */}
       <Header />
 
       <div className="container-fluid contact-banner">
@@ -62,13 +65,13 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <div className="contact-address1">
+              {/* Address Section */}
               <div className="contact-add-mainCard">
                 <div className="address-icon">
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <div className="address-desc">
-                  <strong>Address:</strong> 123 Main Street, Hyderabad,
-                  Telangana, India
+                  <strong>Address:</strong> 123 Main Street, Hyderabad, Telangana, India
                 </div>
               </div>
 
@@ -77,8 +80,7 @@ const Contact = () => {
                   <i className="fas fa-phone-alt"></i>
                 </div>
                 <div className="address-desc">
-                  <strong>Phone Number:</strong>
-                  +91 9876543210
+                  <strong>Phone Number:</strong> +91 9876543210
                 </div>
               </div>
 
@@ -87,8 +89,7 @@ const Contact = () => {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div className="address-desc">
-                  <strong>Email:</strong>
-                  contact@adyahtech.com
+                  <strong>Email:</strong> contact@adyahtech.com
                 </div>
               </div>
             </div>
@@ -109,7 +110,8 @@ const Contact = () => {
 
               <div className="contact-form-container">
                 <h2>Contact Us</h2>
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={sendEmail}>
+                  {/* Name */}
                   <div className="form-group">
                     <label htmlFor="name">Name:</label>
                     <input
@@ -123,6 +125,7 @@ const Contact = () => {
                     />
                   </div>
 
+                  {/* Email */}
                   <div className="form-group">
                     <label htmlFor="email">Email:</label>
                     <input
@@ -137,19 +140,21 @@ const Contact = () => {
                   </div>
 
                   <div className="phone-choose-service">
+                    {/* Phone Number */}
                     <div className="form-group">
                       <label htmlFor="phoneNumber">Phone Number:</label>
                       <input
                         type="tel"
                         id="phoneNumber"
-                        name="phoneNumber"
+                        name="phone"
                         placeholder="Phone Number"
-                        value={formData.phoneNumber}
+                        value={formData.phone}
                         onChange={handleChange}
                         required
                       />
                     </div>
 
+                    {/* Choose Service */}
                     <div className="form-group">
                       <label htmlFor="service">Choose Service:</label>
                       <select
@@ -160,21 +165,17 @@ const Contact = () => {
                         required
                       >
                         <option value="">Select a service</option>
-                        <option value="IT Staffing & Consulting">
-                          IT Staffing & Consulting
-                        </option>
+                        <option value="IT Staffing & Consulting">IT Staffing & Consulting</option>
                         <option value="Data Science">Data Science</option>
                         <option value="Web Development">Web Development</option>
-                        <option value="Mobile Applications">
-                          Mobile Applications
-                        </option>
+                        <option value="Mobile Applications">Mobile Applications</option>
                         <option value="Cloud Services">Cloud Services</option>
                         <option value="Cyber Security">Cyber Security</option>
-                        <option value="Cyber Security1">Cyber Security1</option>
                       </select>
                     </div>
                   </div>
 
+                  {/* Message */}
                   <div className="form-group">
                     <label htmlFor="message">Message:</label>
                     <textarea
@@ -188,14 +189,15 @@ const Contact = () => {
                     />
                   </div>
 
-                  <button type="submit">Submit</button>
+                  {/* Submit Button */}
+                  <button className="form-sub-btn" type="submit">Submit</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      {/* Footer */}
       <Footer />
     </>
   );

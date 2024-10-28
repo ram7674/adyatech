@@ -1,6 +1,6 @@
 .contact-banner {
     background-image: url("../../../public/assets/services-banner.jpg");
-    height: 400px;
+    height: 350px;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -8,10 +8,10 @@
     align-items: center;
 
     span {
-        font-size: 50px;
-        font-weight: 600;
-        color: #fff;
-        letter-spacing: 1px;
+      font-size: 45px;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
     }
 
 }
@@ -128,7 +128,7 @@
     font-weight: normal;
   }
   
-  button {
+  .form-sub-btn {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -138,7 +138,8 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .form-sub-btn:hover {
     background-color: #0056b3;
   }
+
   

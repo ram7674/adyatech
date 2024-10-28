@@ -8,11 +8,18 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
- <!-- AOS (Animate On Scroll)  -->
+ <!-- AOS (Animate On Scroll) fnkn whbx hnwh unod  -->
 
 
 <!-- 
   "animate.css": "^4.1.1",
    "wowjs": "^1.1.3"
+ -->
+
+ <!--
+    Dark Blue : #233f77
+    Light Blue : #1c8ac9
+    dark Green : #589543
+    Green Light- #8cbe41
  -->
 

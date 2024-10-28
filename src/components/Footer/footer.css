@@ -29,6 +29,7 @@
     }
 }
 
+
 .list-unstyled {
 
     li{
@@ -50,4 +51,12 @@
     a {
     cursor: pointer;
     }
+}
+
+.footer_icons:hover {
+    background-color: #8cbe41;
+}
+
+.footer_icons:hover a i {
+    color: #233f77;
 }
