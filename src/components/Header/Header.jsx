@@ -30,19 +30,19 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link as={NavLink} to="/clients">Clients</Nav.Link>
             <Nav.Link as={NavLink} to="/careers">Careers</Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">Contact Us</Nav.Link>
+            <Nav.Link >Blog</Nav.Link>
           </Nav>
 
-          {/* <Nav>
-          <Nav.Link href="#">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown-2">
+          <Nav>
+          <Nav.Link as={NavLink} to="/contact" className="navbar-contBtn">Contact Us</Nav.Link>
+          {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown-2">
             <NavDropdown.Item href="#">Action</NavDropdown.Item>
             <NavDropdown.Item href="#">Another action</NavDropdown.Item>
             <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav> */}
+          </NavDropdown> */}
+        </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

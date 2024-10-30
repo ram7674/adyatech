@@ -11,6 +11,11 @@
     justify-content: start;
     align-items: self-start;
     flex-direction: column;
+
+    h5 {
+        color: #00C4FF;
+        
+    }
 }
 
 .footer_desc {
@@ -29,6 +34,9 @@
     }
 }
 
+.footer_items:hover a {
+    color: #00C4FF !important;
+}
 
 .list-unstyled {
 
@@ -44,6 +52,7 @@
 
 .socila_linktit{
     margin-bottom: 20px;
+    color: #00C4FF;
 }
  
 .footer_icons {
@@ -54,9 +63,20 @@
 }
 
 .footer_icons:hover {
-    background-color: #8cbe41;
+    background: #00C4FF;
 }
 
 .footer_icons:hover a i {
     color: #233f77;
+}
+
+.footer-copy-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-gradient {
+    height: 7px;
+    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
 }

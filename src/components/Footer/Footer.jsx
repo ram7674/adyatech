@@ -1,20 +1,24 @@
 import React from "react";
+import "./footer.css";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import footerlogo from "../../../public/assets/adyatech-logo-for-website-white.png";
-import "./footer.css";
-import { Link } from "react-router-dom";
+import callIcon from "../../../public/assets/call-icon.svg";
+import addressIcon from "../../../public/assets/address-icon.svg";
+import emailIcon from "../../../public/assets/email-icon.svg";
 
 const Footer = () => {
   return (
+    <>
     <footer
       className="text-light footer_mainSec"
-      style={{ background: "#233f77" }}
+      style={{ background: "#152F65" }}
     >
       <Container>
         <Row>
           {/* Company Logo */}
-          <Col md={6} sm={6}>
+          <Col md={5} sm={5}>
             <div className="mb-3">
               <Image
                 src={footerlogo}
@@ -27,26 +31,37 @@ const Footer = () => {
               data science solutions to empower your business in a rapidly
               evolving digital world.
             </p>
+          </Col>
 
-            {/* Contact Details with Icons */}
-            <ul className="list-unstyled">
-              <li>
-                <i className="fas fa-map-marker-alt"></i> Address: 123 Street,
-                City, Country
-              </li>
-              <li>
-                <i className="fas fa-phone-alt"></i> Phone:{" "}
-                <a href="tel:+123456789" className="text-light">
-                  +123 456 789
-                </a>
-              </li>
-              <li>
-                <i className="fas fa-envelope"></i> Email:{" "}
-                <a href="mailto:info@company.com" className="text-light">
-                  info@company.com
-                </a>
-              </li>
-            </ul>
+          {/* Services */}
+          <Col md={2} sm={6}>
+            <ListGroup variant="flush" className="footer_aitem_align">
+              <h5>Services</h5>
+              <ListGroup.Item className="footer_items">
+                <Link>IT Staffing & Consulting</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Data Science</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Web Development</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Mobile Applications</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Cloud Services</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Salesforce</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Health Care IT</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link>Cyber Security</Link>
+              </ListGroup.Item>
+            </ListGroup>
           </Col>
 
           {/* Quick Links */}
@@ -71,28 +86,39 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          {/* Services */}
-          <Col md={2} sm={6}>
-            <ListGroup variant="flush" className="footer_aitem_align">
-              <h5>Services</h5>
-              <ListGroup.Item className="footer_items">
-                <Link>IT Staffing & Consulting</Link>
-              </ListGroup.Item>
-              <ListGroup.Item className="footer_items">
-                <Link>Data Science</Link>
-              </ListGroup.Item>
-              <ListGroup.Item className="footer_items">
-                <Link>Web Development</Link>
-              </ListGroup.Item>
-              <ListGroup.Item className="footer_items">
-                <Link>Mobile Applications</Link>
-              </ListGroup.Item>
-            </ListGroup>
-          </Col>
-
           {/* Social Links */}
-          <Col md={2} sm={6}>
-            <h5 className="socila_linktit">Follow Us</h5>
+          <Col md={3} sm={6}>
+            <h5 className="socila_linktit">Contact</h5>
+
+            {/* Contact Details with Icons */}
+            <ul className="list-unstyled">
+              <li>
+                <img src={addressIcon} alt="" /> Address: 123 Street, City, Country
+              </li>
+              <li>
+                <img src={callIcon} alt="" /> Phone:{" "}
+                <a href="tel:+123456789" className="text-light">
+                  +123 456 789
+                </a>
+              </li>
+              <li>
+                <img src={emailIcon} alt="" /> Email:{" "}
+                <a href="mailto:info@company.com" className="text-light">
+                  info@company.com
+                </a>
+              </li>
+            </ul>
+          </Col>
+        </Row>
+
+        {/* Horizontal line above rights content */}
+        <hr className="my-4 text-light" />
+
+        {/* Rights Content */}
+        <Row className="pt-3">
+          <Col className="footer-copy-sec">
+            <p>Copyright &copy; 2022 Adyahtech. All Rights Reserved</p>
+
             <ListGroup horizontal>
               <ListGroup.Item className="footer_icons">
                 <a className="text-light">
@@ -117,18 +143,11 @@ const Footer = () => {
             </ListGroup>
           </Col>
         </Row>
-
-        {/* Horizontal line above rights content */}
-        <hr className="my-4 text-light" />
-
-        {/* Rights Content */}
-        <Row className="pt-3">
-          <Col className="text-center">
-            <p>&copy; 2024 adyahtech.com All Rights Reserved.</p>
-          </Col>
-        </Row>
       </Container>
     </footer>
+
+    <div className="footer-gradient"></div>
+    </>
   );
 };
 

@@ -2,157 +2,33 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./home.css";
-import service1 from "/assets/digital_signaged.png";
-import experience from "/assets/years-of-it-experience.jpg";
-
+import homePageImg from "/assets/home-pageimg.svg";
+import whyChooseImg from "/assets/why-chooseimg.svg";
+import whatWeDoImage from "/assets/what-we-do-Image.svg";
 
 const Home = () => {
-  
   return (
     <>
       {/* navbar */}
       <Header />
 
-      {/* content here */}
+      {/* home page */}
       <div className="container-fluid hero_section">
-        <div className="row">
-          {/* Video section */}
-          <div className="col-12">
-            <video className="video-bg" autoPlay muted loop>
-              <source src="/assets/hero-sec-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-
-      {/* Container for content */}
-      <div className="container hero_content">
-        <div className="row">
-          <div className="col-md-6 col-12 hero_content_card">
-            <h1>
-              Innovative IT Solutions for Your Business Success
-            </h1>
-            <p>
-              Empowering your business with cutting-edge IT staffing, data
-              science, and consulting services
-            </p>
-          </div>
-
-          {/* GIF section */}
-          <div className="col-md-6 col-12 hero_gif_card">
-            <img src="/assets/it-consulting.gif" alt="IT Consulting GIF" />
-          </div>
-        </div>
-      </div>
-
-      {/* welcome */}
-      <div className="container-fluid welcome-MainBg-full">
-        <div className="container">
-          <div className="row welcome-MainBg">
-          <h1>Welcome To Adyah Tech</h1>
-            <div className="col-lg-10">
-              
-              <div className="welcome-card" data-aos="zoom-in">
-                <h3>Empowering Your Business with Cutting-Edge IT Solutions</h3>
-                <p>
-                  At Adyah Tech, we provide innovative IT staffing, consulting,
-                  and data science solutions to empower your business in a
-                  rapidly evolving digital world. Our team of experts delivers
-                  results that drive efficiency, growth, and success.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* what we do section */}
-      <div className="container-fluid what-main-cardSec">
         <div className="container">
           <div className="row">
-            <h1>What We Do</h1>
-
-            <div className="col-6" data-aos="fade-right">
-              <div className="what-sectionCard">
-                <img
-                  src={service1}
-                  alt="IT Staffing & Consulting image"
-                  className=""
-                />
-                <div className="what-card">
-                  <h3>IT Staffing & Consulting</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt placeat ab ex expedita inventore officiis amet.
-                  </p>
-                </div>
-              </div>
+            {/*  */}
+            <div className="col-lg-6 hero_content_card">
+              <span>WELCOME TO ADYAH TECH</span>
+              <h1>Innovative IT Solutions for Your Business Success</h1>
+              <p>
+                Empowering your business with cutting-edge IT staffing, data
+                science, and consulting services
+              </p>
+              <button>Contact Now</button>
             </div>
-
-            <div className="col-6" data-aos="fade-left">
-              <div className="what-sectionCard">
-                <img
-                  src={service1}
-                  alt="IT Staffing & Consulting image"
-                  className=""
-                />
-                <div className="what-card">
-                  <h3>Data Science</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt placeat ab ex expedita inventore officiis amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6" data-aos="fade-up">
-              <div className="what-sectionCard">
-                <img
-                  src={service1}
-                  alt="IT Staffing & Consulting image"
-                  className=""
-                />
-                <div className="what-card">
-                  <h3>Web Development</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt placeat ab ex expedita inventore officiis amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6" data-aos="fade-up">
-              <div className="what-sectionCard">
-                <img
-                  src={service1}
-                  alt="IT Staffing & Consulting image"
-                  className=""
-                />
-                <div className="what-card">
-                  <h3>Mobile Applications</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Nesciunt placeat ab ex expedita inventore officiis amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* contact */}
-      <div className="container-fluid contact-mainhomebg">
-        <div className="row">
-          <div className="col-12">
-            <div className="contact-home-page">
-              <h2>
-                Ready to take your business to the next level? Let's talk!
-              </h2>
-              <button className="home-btn">CONTACT US</button>
+            {/*  */}
+            <div className="col-md-6 col-lg-6 hero_gif_card">
+              <img src={homePageImg} alt="IT Consulting GIF" />
             </div>
           </div>
         </div>
@@ -162,64 +38,340 @@ const Home = () => {
       <div className="container-fluid why-chooseMainBg">
         <div className="container">
           <div className="row">
-            <h1>Why Choose Us</h1>
+            {/* left card */}
+            <div className="col-lg-6">
+              <div className="why-choose-left">
+                <img
+                  src={whyChooseImg}
+                  alt=" experience"
+                  className="why-choose-img"
+                />
+              </div>
+            </div>
 
-            {/* card1 */}
-            <div className="col-lg-4">
+            {/* right card */}
+            <div className="col-lg-6">
               <div className="why-choose-parent">
-                <div className="why-chooose-card">
-                  <img
-                    src={experience}
-                    alt=" experience"
-                    className="why-choose-img"
-                  />
-                  <h4>Over 10 years of IT experience</h4>
-                  <p>
-                    We bring a wealth of expertise in navigating complex IT
-                    challenges. Our decade-long journey ensures quality
-                    solutions tailored for your needs.
-                  </p>
+                <span>WHY CHOOSE US</span>
+                <h4 className="why-choose-mainTit">Results-Driven Digital Solutions Tailored for You</h4>
+                <p>
+                  At Adyah Tech, we deliver cutting-edge digital marketing
+                  solutions designed to elevate your brand in a competitive
+                  landscape. Our team of experts is committed to driving
+                  measurable growth, enhancing brand presence, and ensuring
+                  long-term success for your business.
+                </p>
+                <div className="why-choose-child">
+                  {/* child1 */}
+                  <div className="why-choose-card">
+                    <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child2 */}
+                  <div className="why-choose-card">
+                  <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child3 */}
+                  <div className="why-choose-card">
+                  <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child4 */}
+                  <div className="why-choose-card">
+                  <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            {/* card2 */}
-            <div className="col-lg-4">
-              <div className="why-choose-parent why-choose-parent2">
-                <div className="why-chooose-card">
-                  <img
-                    src={experience}
-                    alt=" experience"
-                    className="why-choose-img"
-                  />
-                  <h4>Customized, innovative solutions</h4>
+          </div>
+        </div>
+      </div>
+
+      {/* our culture contaier */}
+      <div className="container-fluid our-culture-mainBg">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 culture-cardMain">
+              <span>OUR CULTURE</span>
+              <div className="culture-card">
+                {/* mission card1 */}
+                <div className="culture-inner-card">
+                  <h4>Mission</h4>
                   <p>
-                    We craft unique strategies that align with your business
-                    goals. Our focus is on delivering innovative solutions that
-                    drive results.
+                    Adyah Tech was founded to provide cutting-edge IT solutions
+                    that simplify complexity and deliver results
                   </p>
                 </div>
-              </div>
-            </div>
-            {/* card3 */}
-            <div className="col-lg-4">
-              <div className="why-choose-parent">
-                <div className="why-chooose-card">
-                  <img
-                    src={experience}
-                    alt=" experience"
-                    className="why-choose-img"
-                  />
-                  <h4>Proven track record of client success</h4>
+                {/* vision card3 */}
+                <div className="culture-inner-card">
+                  <h4>Vision</h4>
                   <p>
-                    Our history is marked by numerous satisfied clients who have
-                    thrived with our help. We take pride in fostering lasting
-                    partnerships built on success.
+                    Adyah Tech was founded to provide cutting-edge IT solutions
+                    that simplify complexity and deliver results
+                  </p>
+                </div>
+                {/* values card3 */}
+                <div className="culture-inner-card">
+                  <h4>Values</h4>
+                  <p>
+                    Adyah Tech was founded to provide cutting-edge IT solutions
+                    that simplify complexity and deliver results
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* what-we-do section */}
+      <div className="container-fluid why-we-secBg">
+        <div className="container">
+          <div className="row">
+            {/* left card */}
+            <div className="col-lg-6">
+              <div className="why-secParent">
+                <span>WHAT WE DO</span>
+                <h4>Elevate Your Digital Impact with Customized Solutions</h4>
+                <p>
+                  At Adyah Tech, we provide innovative IT staffing, consulting,
+                  and data science solutions to empower your business in a
+                  rapidly evolving digital world. Our team of experts delivers
+                  results that drive efficiency, growth, and success.
+                </p>
+                <div className="why-secChild">
+                  <h5>Innovative Strategies</h5>
+                  <h5>Industry Expertise</h5>
+                  <h5>Client - Centered Service</h5>
+                  <h5>Clear & Flexible Pricing</h5>
+                  <h5>Innovative Solutions</h5>
+                  <h5>Enhanced User Experience</h5>
+                </div>
+                <button>Know More</button>
+              </div>
+            </div>
+
+            {/* right card */}
+            <div className="col-lg-6">
+              <div className="why-choose-left">
+                <img
+                  src={whatWeDoImage}
+                  alt=" experience"
+                  className="why-choose-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* what we offer */}
+      <div className="offer-mainContainer">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="offer-container">
+                {/* tittle section */}
+                <div className="offer-titleCard">
+                  <span>WHAT WE OFFER</span>
+                  <h4>
+                    Delivering IT solutions that enable you to work smarter
+                  </h4>
+                </div>
+
+                {/* inner main card */}
+                <div className="offers-dataCard">
+                  {/* card1 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card2 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card3 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card4 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card5 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card6 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card7 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card8 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                  {/* card9 */}
+                  <div className="offers-card">
+                    <div className="offer-icon-card">
+                      <div className="offer-icon"></div>
+                      <h4>IT Staffing & Consulting</h4>
+                    </div>
+
+                    <div className="inner-card-data">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Sed reiciendis incidunt aspernatur possimus facere
+                        minima tempore o
+                      </p>
+                      <button>Learn more</button>
+                    </div>
+                    <div className="offer-gradient"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* home page contact card */}
+      <div className="home-contactbg">
+        <div className="home-contact-page">
+          <div className="home-contCard">
+            <div>
+              <h4 className="home-contTitle">Have an Idea in Mind?</h4>
+              <p className="home-contdesc">We'll Help You Bring It to Life</p>
+            </div>
+            <button className="home-contBtn">Get in touch</button>
+          </div>
+        </div>
+
+        <div className="home-contFooter"></div>
       </div>
 
       {/* footer */}
