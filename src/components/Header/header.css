@@ -102,6 +102,11 @@
   /* ---end--- */
 
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+   color: #1C8AC9 !important;
+}
+
+
 /* mobile responsive */
 @media screen and (max-width: 767px) {
 

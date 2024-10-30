@@ -2,7 +2,12 @@ import React, { useRef, useState } from "react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./contact.css";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
+
+import contactImg from "/assets/contact-page-image.svg";
+import contactCallIcon from "/assets/contact-call-icon.svg";
+import contactMaillIcon from "/assets/contact-mail-icon.svg";
+import contactAddressIcon from "/assets/contact-address-icon.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,7 +19,6 @@ const Contact = () => {
   });
 
   const form = useRef();
-  const toast = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,11 +32,16 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_q1oznbs', 'template_hwumd7k', form.current, '7hqPKLGR6oPG4vOm6')
+      .sendForm(
+        "service_q1oznbs",
+        "template_hwumd7k",
+        form.current,
+        "7hqPKLGR6oPG4vOm6"
+      )
       .then(
         () => {
-          console.log('SUCCESS!');
-          window.alert('Email sent successfully!'); // Alert message on success;
+          console.log("SUCCESS!");
+          window.alert("Email sent successfully!"); // Alert message on success;
 
           // Reset form after successful submission
           setFormData({
@@ -45,109 +54,85 @@ const Contact = () => {
           });
         },
         (error) => {
-          console.error('FAILED...', error.text);
-          window.alert('Failed to send email. Please try again.');
+          console.error("FAILED...", error.text);
+          window.alert("Failed to send email. Please try again.");
         }
       );
   };
 
   return (
     <>
-
       {/* Navbar */}
       <Header />
 
-      <div className="container-fluid contact-banner">
+      {/* contact main container */}
+      <div className="container-fluid contact-mainBg">
         <span>Contact Us</span>
+        <h1>Let's Build the Future Together!</h1>
+        <h4>Looking to elevate your business with innovative IT solutions?</h4>
+        <p>
+          Adyah Tech is here to help! From expert staffing to data science and
+          custom web and mobile solutions, let's make your vision a reality. Get
+          in touch, and let's create something extraordinary together!
+        </p>
       </div>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="contact-address1">
-              {/* Address Section */}
-              <div className="contact-add-mainCard">
-                <div className="address-icon">
-                  <i className="fas fa-map-marker-alt"></i>
+      {/* contact form container */}
+      <div className="container-fluid contact-inputBg">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="contact-form-mainbg">
+                <div className="contact-imageCard">
+                  <img src={contactImg} alt="contact Img" />
                 </div>
-                <div className="address-desc">
-                  <strong>Address:</strong> 123 Main Street, Hyderabad, Telangana, India
-                </div>
-              </div>
 
-              <div className="contact-add-mainCard">
-                <div className="address-icon">
-                  <i className="fas fa-phone-alt"></i>
-                </div>
-                <div className="address-desc">
-                  <strong>Phone Number:</strong> +91 9876543210
-                </div>
-              </div>
-
-              <div className="contact-add-mainCard">
-                <div className="address-icon">
-                  <i className="fas fa-envelope"></i>
-                </div>
-                <div className="address-desc">
-                  <strong>Email:</strong> contact@adyahtech.com
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12">
-            <div className="contact-form-mainbg">
-              <div className="contact-address-data">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579573!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1729934850690!5m2!1sen!2sin"
-                  className="contact-form-map"
-                  style={{ border: 0, width: "100%" }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-
-              <div className="contact-form-container">
-                <h2>Contact Us</h2>
-                <form ref={form} onSubmit={sendEmail}>
-                  {/* Name */}
-                  <div className="form-group">
-                    <label htmlFor="name">Name:</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
+                <div className="contact-form-container">
+                  <div className="contact-contInp">
+                    <span>LET US CONNECT WITH YOU</span>
+                    <h3>Have an Idea in Mind?</h3>
+                    <h4>We'll Help You Bring It to Life</h4>
                   </div>
+                  <form
+                    ref={form}
+                    onSubmit={sendEmail}
+                    className="form-mainCont"
+                  >
+                    {/* Name */}
+                    <div className="form-group">
+                      <label htmlFor="name">Your Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Type your full name ? "
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
 
-                  {/* Email */}
-                  <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="phone-choose-service">
+                    {/* Email */}
+                    <div className="form-group">
+                      <label htmlFor="email">Your Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Type your email ? "
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                     {/* Phone Number */}
                     <div className="form-group">
-                      <label htmlFor="phoneNumber">Phone Number:</label>
+                      <label htmlFor="phoneNumber">Your Phone Number</label>
                       <input
                         type="tel"
                         id="phoneNumber"
                         name="phone"
-                        placeholder="Phone Number"
+                        placeholder="Type your phone number ? "
                         value={formData.phone}
                         onChange={handleChange}
                         required
@@ -156,7 +141,7 @@ const Contact = () => {
 
                     {/* Choose Service */}
                     <div className="form-group">
-                      <label htmlFor="service">Choose Service:</label>
+                      <label htmlFor="service">Select Service</label>
                       <select
                         id="service"
                         name="service"
@@ -164,39 +149,96 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Select a service</option>
-                        <option value="IT Staffing & Consulting">IT Staffing & Consulting</option>
+                        <option value="">Select a service you want ?</option>
+                        <option value="IT Staffing & Consulting">
+                          IT Staffing & Consulting
+                        </option>
                         <option value="Data Science">Data Science</option>
                         <option value="Web Development">Web Development</option>
-                        <option value="Mobile Applications">Mobile Applications</option>
+                        <option value="Mobile Applications">
+                          Mobile Applications
+                        </option>
                         <option value="Cloud Services">Cloud Services</option>
                         <option value="Cyber Security">Cyber Security</option>
                       </select>
                     </div>
-                  </div>
 
-                  {/* Message */}
-                  <div className="form-group">
-                    <label htmlFor="message">Message:</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      placeholder="Let us know what you're thinking!..."
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows="4"
-                      required
-                    />
-                  </div>
+                    {/* Message */}
+                    <div className="form-group-message">
+                      <label htmlFor="message">Your Message</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Let us know what you're thinking!..."
+                        value={formData.message}
+                        onChange={handleChange}
+                        rows="4"
+                        required
+                      />
+                    </div>
 
-                  {/* Submit Button */}
-                  <button className="form-sub-btn" type="submit">Submit</button>
-                </form>
+                    {/* Submit Button */}
+                    <button className="form-sub-btn" type="submit">
+                      Let's Connect
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* contact address container */}
+      <div className="contact-addresCont">
+        {/* left card */}
+        <div className="contact-addresLeft">
+          {/* card1 */}
+          <div className="address-detailsCard">
+            <h4>Let's Talk</h4>
+            <div className="address-iconsCard">
+              <div className="address-iconCont">
+                <img src={contactCallIcon} alt="contact call icon" />
+              </div>
+              <span>+1 (470) - 508 - 5128</span>
+            </div>
+          </div>
+          {/* card2 */}
+          <div className="address-detailsCard">
+            <h4>Get Connect</h4>
+            <div className="address-iconsCard">
+              <div className="address-iconCont">
+                <img src={contactMaillIcon} alt="contact call icon" />
+              </div>
+
+              <span>h1bcap@adyahtech.com</span>
+            </div>
+          </div>
+          {/* card3 */}
+          <div className="address-detailsCard">
+            <h4>Find Us</h4>
+            <div className="address-iconsCard">
+              <div className="address-iconCont">
+                <img src={contactAddressIcon} alt="contact call icon" />
+              </div>
+
+              <span>4555 Mansell Rd # 300 Alpharetta, GA 30022, USA</span>
+            </div>
+          </div>
+        </div>
+        {/* right card */}
+        <div className="contact-addresRight">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579482!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1730295819302!5m2!1sen!2sin"
+            className="contact-formCont"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </div>
+
       {/* Footer */}
       <Footer />
     </>
