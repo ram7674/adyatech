@@ -35,13 +35,6 @@ const Header = () => {
 
           <Nav>
           <Nav.Link as={NavLink} to="/contact" className="navbar-contBtn">Contact Us</Nav.Link>
-          {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown-2">
-            <NavDropdown.Item href="#">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
-          </NavDropdown> */}
         </Nav>
         </Navbar.Collapse>
       </Container>

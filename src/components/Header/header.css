@@ -70,6 +70,38 @@
     color: #fff;
 }
 
+
+/* below code is hover items show the green line----start */
+
+.navbar_items .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar_items .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #5C9641; /* Line color */
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+  }
+  
+  .navbar_items .nav-link:hover::before {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  .navbar_items .nav-link:hover {
+    color: #1C8AC9;
+  }
+  /* ---end--- */
+
+
 /* mobile responsive */
 @media screen and (max-width: 767px) {
 

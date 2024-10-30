@@ -5,6 +5,7 @@ import "./home.css";
 import homePageImg from "/assets/home-pageimg.svg";
 import whyChooseImg from "/assets/why-chooseimg.svg";
 import whatWeDoImage from "/assets/what-we-do-Image.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -367,7 +368,7 @@ const Home = () => {
               <h4 className="home-contTitle">Have an Idea in Mind?</h4>
               <p className="home-contdesc">We'll Help You Bring It to Life</p>
             </div>
-            <button className="home-contBtn">Get in touch</button>
+            <Link to="/contact"><button className="home-contBtn">Get in touch</button></Link>
           </div>
         </div>
 
