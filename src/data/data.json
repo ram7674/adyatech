@@ -1,0 +1,61 @@
+{
+  "services": {
+    "itStaffingConsulting": {
+      "title": "IT Staffing & Consulting",
+      "description": "We provide flexible, high-quality staffing solutions that align with your unique IT needs, connecting you with specialized professionals for both short- and long-term projects.",
+      "image": "/assets/it-staffing-consulting.svg",
+      "rowCards": [
+        {
+          "title": "Targeted Talent Acquisition",
+          "description": "Candidates are carefully matched to fit both your technical needs and company culture."
+        },
+        {
+          "title": "Flexible Staffing Solutions",
+          "description": "Our staffing solutions offer scalability to meet your ever-changing project demands."
+        },
+        {
+          "title": "Consulting Services",
+          "description": "Expert advice from IT professionals to streamline your business processes."
+        }
+      ]
+    },
+    "dataScience": {
+      "title": "Data Science",
+      "description": "Harness the power of your data with our advanced analytics and machine learning services.",
+      "image": "/assets/data-science.svg",
+      "rowCards": [
+        {
+          "title": "Advanced Analytics",
+          "description": "We analyze your data to provide actionable insights that drive business decisions."
+        },
+        {
+          "title": "Machine Learning Models",
+          "description": "We build and deploy machine learning models that optimize your operations."
+        },
+        {
+          "title": "Predictive Analysis",
+          "description": "Predict future trends and outcomes using state-of-the-art data science techniques."
+        }
+      ]
+    },
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "From sleek websites to robust e-commerce solutions, we develop platforms that engage users.",
+      "image": "/assets/web-development.svg",
+      "rowCards": [
+        {
+          "title": "Responsive Web Design",
+          "description": "Websites that adapt seamlessly to any device."
+        },
+        {
+          "title": "E-Commerce Solutions",
+          "description": "Customized e-commerce platforms that drive conversions."
+        },
+        {
+          "title": "Content Management Systems",
+          "description": "We build powerful CMS platforms for easy content management."
+        }
+      ]
+    }
+  }
+}

@@ -67,7 +67,7 @@
 }
 
 .navbar-contBtn:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 
@@ -106,6 +106,31 @@
    color: #1C8AC9 !important;
 }
 
+
+
+
+
+
+/* Enable hover dropdown for 'Services' */
+.navbar_mainContainer .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust the margin so the dropdown is properly aligned */
+  }
+  
+  /* Ensure the dropdown closes when not hovered */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .navbar_mainContainer .dropdown-menu {
+    margin-top: 10px; /* Adjust as needed */
+    transition: all 0.3s ease-in-out;
+  }
+
+  
+
+
+  
 
 /* mobile responsive */
 @media screen and (max-width: 767px) {

@@ -1,11 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./home.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import "./home.css";
+import ContactCard from "../../components/ContactCard/ContactCard";
+import OurCulture from "../../components/OurCulture/OurCulture";
+
 import homePageImg from "/assets/home-pageimg.svg";
 import whyChooseImg from "/assets/why-chooseimg.svg";
 import whatWeDoImage from "/assets/what-we-do-Image.svg";
-import { Link } from "react-router-dom";
+import ConsultaionImg from "../../../public/assets/how-it-conusultant-img.svg"
+import DiscussionImg from "../../../public/assets/how-it-discussion-img.svg"
+import ExecutionImg from "../../../public/assets/how-it-execution-img.png"
+import ArrowImg from "../../../public/assets/how-it-arrow-img.svg"
+
 
 const Home = () => {
   return (
@@ -35,113 +43,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* why choose us */}
-      <div className="container-fluid why-chooseMainBg">
-        <div className="container">
-          <div className="row">
-            {/* left card */}
-            <div className="col-lg-6">
-              <div className="why-choose-left">
-                <img
-                  src={whyChooseImg}
-                  alt=" experience"
-                  className="why-choose-img"
-                />
-              </div>
-            </div>
-
-            {/* right card */}
-            <div className="col-lg-6">
-              <div className="why-choose-parent">
-                <span>WHY CHOOSE US</span>
-                <h4 className="why-choose-mainTit">Results-Driven Digital Solutions Tailored for You</h4>
-                <p>
-                  At Adyah Tech, we deliver cutting-edge digital marketing
-                  solutions designed to elevate your brand in a competitive
-                  landscape. Our team of experts is committed to driving
-                  measurable growth, enhancing brand presence, and ensuring
-                  long-term success for your business.
-                </p>
-                <div className="why-choose-child">
-                  {/* child1 */}
-                  <div className="why-choose-card">
-                    <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child2 */}
-                  <div className="why-choose-card">
-                  <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child3 */}
-                  <div className="why-choose-card">
-                  <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child4 */}
-                  <div className="why-choose-card">
-                  <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* our culture contaier */}
-      <div className="container-fluid our-culture-mainBg">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 culture-cardMain">
-              <span>OUR CULTURE</span>
-              <div className="culture-card">
-                {/* mission card1 */}
-                <div className="culture-inner-card">
-                  <h4>Mission</h4>
-                  <p>
-                    Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
-                  </p>
-                </div>
-                {/* vision card3 */}
-                <div className="culture-inner-card">
-                  <h4>Vision</h4>
-                  <p>
-                    Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
-                  </p>
-                </div>
-                {/* values card3 */}
-                <div className="culture-inner-card">
-                  <h4>Values</h4>
-                  <p>
-                    Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <OurCulture />
 
       {/* what-we-do section */}
       <div className="container-fluid why-we-secBg">
@@ -360,20 +263,111 @@ const Home = () => {
         </div>
       </div>
 
-      {/* home page contact card */}
-      <div className="home-contactbg">
-        <div className="home-contact-page">
-          <div className="home-contCard">
-            <div>
-              <h4 className="home-contTitle">Have an Idea in Mind?</h4>
-              <p className="home-contdesc">We'll Help You Bring It to Life</p>
+      {/* how it works */}
+      <div className="container-fluid how-it-work-MainBg">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="how-it-tit-card">
+                <span>HOW IT WORKS</span>
+                <h3>Your Path to Success How We Deliver Results</h3>
+              </div>
+              <div className="how-it-card">
+                <div className="how-it-image-Sec">
+                  <img src={ConsultaionImg} alt="Consultation" />
+                  <h4>Consultation</h4>
+                </div>
+                <img src={ArrowImg} alt="arrow image" />
+                <div className="how-it-image-Sec">
+                  <img src={DiscussionImg} alt="Discussion & Planning" />
+                  <h4>Discussion & Planning</h4>
+                </div>
+                <img src={ArrowImg} alt="arrow image" />
+                <div className="how-it-image-Sec">
+                  <img src={ExecutionImg} alt="Execution" />
+                  <h4>Execution</h4>
+                </div>
+              </div>
             </div>
-            <Link to="/contact"><button className="home-contBtn">Get in touch</button></Link>
           </div>
         </div>
-
-        <div className="home-contFooter"></div>
       </div>
+
+      {/* why choose us */}
+      <div className="container-fluid why-chooseMainBg">
+        <div className="container">
+          <div className="row">
+            {/* left card */}
+            <div className="col-lg-6">
+              <div className="why-choose-parent">
+                <span>WHY CHOOSE US</span>
+                <h4 className="why-choose-mainTit">
+                  Results-Driven Digital Solutions Tailored for You
+                </h4>
+                <p>
+                  At Adyah Tech, we deliver cutting-edge digital marketing
+                  solutions designed to elevate your brand in a competitive
+                  landscape. Our team of experts is committed to driving
+                  measurable growth, enhancing brand presence, and ensuring
+                  long-term success for your business.
+                </p>
+                <div className="why-choose-child">
+                  {/* child1 */}
+                  <div className="why-choose-card">
+                    <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child2 */}
+                  <div className="why-choose-card">
+                    <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child3 */}
+                  <div className="why-choose-card">
+                    <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                  {/* child4 */}
+                  <div className="why-choose-card">
+                    <div className="why-iconCard"></div>
+                    <h4>Innovative Strategies</h4>
+                    <p>
+                      Our team drives growth through data-backed digital
+                      marketing strategies that adapt to your unique needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* right card */}
+            <div className="col-lg-6">
+              <div className="why-choose-left">
+                <img
+                  src={whyChooseImg}
+                  alt=" experience"
+                  className="why-choose-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* home page contact card */}
+      <ContactCard />
 
       {/* footer */}
       <Footer />

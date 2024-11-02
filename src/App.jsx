@@ -6,10 +6,7 @@ import About from './pages/About/About';
 import Careers from './pages/Careers/Careers';
 import Clients from './pages/Clients/Clients';
 import Contact from './pages/Contact/Contact';
-import ItStaffing from './pages/ItStaffing/ItStaffing';
-import DataScience from './pages/DataScience/DataScience';
-import WebDevelopment from './pages/WebDevelopment/WebDevelopment';
-import MobileApplications from './pages/MobileApplications/MobileApplications';
+import Services from './pages/Services/Services';
 
 import AOSInitializer from '../src/AOSInitializer/AOSInitializer';  // Import the AOS initializer
 
@@ -24,11 +21,8 @@ function App() {
         <Route path='/careers' element={<Careers/>} />
         <Route path='/clients' element={<Clients/>} />
         <Route path='/contact' element={<Contact/>} />
-        <Route path='/services/it-staffing-consulting' element={<ItStaffing/>} />
-        <Route path='/services/data-science' element={<DataScience/>} />
-        <Route path='/services/web-development' element={<WebDevelopment/>} />
-        <Route path='/services/mobile-applications' element={<MobileApplications/>} />
-
+        <Route path='/services' element={<Services />} />
+        <Route path='/services/:serviceId' element={<Services />} /> {/* Dynamic service-specific page */}
       </Routes>
     </BrowserRouter>
   );

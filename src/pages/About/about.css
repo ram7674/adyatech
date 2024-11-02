@@ -1,118 +1,54 @@
-.about-banner {
-    background-image: url("../../../public/assets/services-banner.jpg");
-    height: 350px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    span {
-        font-size: 45px;
-        color: #fff;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-}
-
 .about-mainbg {
-    background-color: #f7fbff;
+    background: #E7EFFD;
 }
+
 
 .about_mainCard {
-    padding: 70px 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.about-cardImg {
-    width: 40%;
+    align-items: self-start;
+    height: 100%;
+    flex-direction: column;
 
-    img {
-        height: 300px;
+    span {
+        height: 40px;
+        padding: 7px 30px;
+        gap: 10px;
+        background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+        color: #fff;
+        border-radius: 10px;
     }
-}
-
-.about_insideCard {
-    width: 60%;
 
     h3 {
-        color: #233f77;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 36.8px;
+        text-align: left;
+        color: #233F77;
+        width: 560px;
+        height: 74px;
+        margin: 13px 0px;
     }
 
     p {
-        font-size: 18px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.6px;
+        text-align: left;
+        color: #233F77;
+        width: 560px;
+        height: 64px;
     }
+
 }
 
-
-
-
-.vision-mainbg {
-    padding: 70px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.vision{
-    border: 2px solid #1c8ac9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    height: 300px;
-    padding: 0px 20px;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-.vision-cardimg {
-    height: 50%;
+.about-cardImg {
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-        height: 100px;
+        height: 400px;
     }
 
 }
-.vision-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50%;
-
-    p {
-        text-align: center;
-    }
-
-}
-
-.vision:hover {
-    border-color: #589543;
-    background-color: #f0f8e7;
-    color: #589543;
-    transform: scale(1.05);
-  }
-  
-
-  .vision:hover .vision-cardimg img {
-    opacity: 0.9;
-  }
-  
-  .vision-text h4, .vision-text p {
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .vision:hover .vision-text h4 {
-    color: #004d40;
-  }
-  
-  .vision:hover .vision-text p {
-    color: #33691e;
-  }

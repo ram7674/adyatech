@@ -1,0 +1,65 @@
+
+/* v, m, v */
+.our-culture-mainBg {
+    background: #C9DFF4;
+    padding: 70px 0px;
+  }
+  
+  .culture-cardMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    span {
+      height: 40px;
+      padding: 7px 30px;
+      gap: 10px;
+      background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+      color: #fff;
+      border-radius: 10px;
+      margin-bottom: 50px;
+    }
+  
+  }
+  
+  .culture-card {
+    width: 920px;
+    height: 233px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .culture-inner-card {
+    width: 233px;
+    height: 233px;
+    gap: 16px;
+    border-radius: 50%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #233F77;
+  
+    h4 {
+  
+    }
+  
+    p {
+      text-align: center;
+      font-size: 12px;
+      display: none;
+    }
+  
+  }
+  
+  .culture-inner-card:hover {
+    background: linear-gradient(180deg, #23417A 0%, #1D89C7 50%, #8ABE44 100%);
+  }
+  
+  .culture-inner-card:hover p {
+    display: block;
+  }
+  

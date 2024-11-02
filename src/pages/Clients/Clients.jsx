@@ -1,81 +1,139 @@
 import React from "react";
+import "./clients.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import "./clients.css";
-import clientsImg from "../../../public/assets/about-page.jpg";
+import ContactCard from "../../components/ContactCard/ContactCard";
 
 const Clients = () => {
   return (
     <>
+      {/* navbar */}
       <Header />
 
-      {/* banner */}
-      <div className="container-fluid clients-banner">
-        <span>Clients</span>
+      <div className="container-fluid contact-mainBg">
+        <span>Our Valued Clients</span>
+        <h1 className="clients-main-tit">
+          Building Lasting Partnerships Across Industries
+        </h1>
+        <h4>
+          Delivering Tailored IT Solutions to Drive Innovation Across Industries
+        </h4>
+        <p>
+          Adyah Tech partners with industry-leading organizations to deliver
+          innovative IT solutions that support growth and adaptability. With a
+          client-first approach, we're committed to aligning our expertise with
+          the unique objectives of each partner we serve.
+        </p>
       </div>
 
       {/* clients content */}
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="clients-title-sec">
-              <h1>Our Clients</h1>
-              <p>
-                Adyah Tech serves clients across a spectrum of industries
-                through accurate insight, robust innovation, and demonstrated
-                ability. Adyah Tech serves these prestigious clients either
-                directly or indirectly.
-              </p>
-            </div>
-          </div>
-
-          <div className="col-12">
-            <div className="clients-maincard">
-              <div className="clients-imageSec">
-                <h1>Trusted Partnerships</h1>
-                <p>At Adyah Tech, we collaborate with some of the most respected companies in the industry. Our clients range from emerging startups to established enterprises, all united by their trust in our capabilities. We provide tailored solutions that empower their business operations and drive growth.</p>
-                <img src={clientsImg} alt="clients image" />
+      <div className="container-fluid clients-mainBg">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="clients-titleCard">
+                <span>INDUSTRIES WE SERVE</span>
+                <h3>
+                  Revolutionizing Industries Through Customized, Secure Digital
+                  Services
+                </h3>
               </div>
 
-              <div className="clients-Contents">
-                <div className="clients-sec1">
-                  <div className="clients-card">
-                    <h4>Federal & State Government</h4>
-                    <p>
-                      Supporting federal and state clients in using IT to drive
-                      value-based business outcomes.
-                    </p>
+              <div className="clients-cards">
+                {/* card1 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Healthcare</h5>
                   </div>
-                  <div className="clients-card">
-                    <h4>Financial/Banking/Mortgage</h4>
+
+                  <div className="clients-innerCard">
                     <p>
-                      Rapid, innovative solutions for an industry focused on
-                      efficiency and bottom-line results.
-                    </p>
-                  </div>
-                  <div className="clients-card">
-                    <h4>Healthcare/Pharma</h4>
-                    <p>
-                      Technology solutions for hospitals, health systems,
-                      insurance companies, and more, with a focus on compliance
-                      and operational efficiency.
+                      Transforming patient care through secure, compliant
+                      technology solutions tailored for the healthcare industry.
+                      Our expertise ensures compliance with regulatory standards
+                      and enhances the efficiency of patient management.
                     </p>
                   </div>
                 </div>
+                {/* card2 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Finance & E-commerce</h5>
+                  </div>
 
-                <div className="clients-sec2">
-                  <div className="clients-card">
-                    <h4>Telecom</h4>
+                  <div className="clients-innerCard">
                     <p>
-                      Advanced telecommunications and OSS systems integration to
-                      capitalize on new market opportunities.
+                      Empowering financial institutions & e-commerce platforms
+                      with secure solutions that drive operational efficiency &
+                      customer satisfaction. Our services include advanced data
+                      analytics, fraud prevention, & user-centered digital
+                      experiences.
                     </p>
                   </div>
-                  <div className="clients-card">
-                    <h4>Others</h4>
+                </div>
+                {/* card3 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Education</h5>
+                  </div>
+
+                  <div className="clients-innerCard">
                     <p>
-                      Expanding technology solutions to various other industries
-                      based on proven success.
+                      Delivering digital solutions for modern, efficient
+                      educational experiences. Our services enable institutions
+                      to leverage technology for enhanced learning,
+                      administrative efficiency, and student engagement.
+                    </p>
+                  </div>
+                </div>
+                {/* card4 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Logistics & Manufacturing</h5>
+                  </div>
+
+                  <div className="clients-innerCard">
+                    <p>
+                      Streamlining operations through data analytics,
+                      automation, and innovation. We enable logistics and
+                      manufacturing companies to optimize processes, reduce
+                      costs, and improve tracking and delivery precision
+                    </p>
+                  </div>
+                </div>
+                {/* card5 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Telecommunications</h5>
+                  </div>
+
+                  <div className="clients-innerCard">
+                    <p>
+                      Supporting the telecommunications sector with advanced
+                      infrastructure, network solutions, and security measures
+                      that boost connectivity, reduce downtime, and enhance
+                      overall user experience and reliability.
+                    </p>
+                  </div>
+                </div>
+                {/* card6 */}
+                <div className="clients-indu-cards">
+                  <div className="clients-iconCard">
+                    <div className="iconCard"></div>
+                    <h5>Public Sector & Government</h5>
+                  </div>
+
+                  <div className="clients-innerCard">
+                    <p>
+                      Providing secure, scalable, and compliant solutions for
+                      government agencies to improve public services, streamline
+                      data management, enhance digital accessibility, and foster
+                      citizen engagement.
                     </p>
                   </div>
                 </div>
@@ -85,6 +143,10 @@ const Clients = () => {
         </div>
       </div>
 
+      {/* home page contact component */}
+      <ContactCard />
+
+      {/* footer */}
       <Footer />
     </>
   );

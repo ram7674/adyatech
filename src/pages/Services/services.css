@@ -1,0 +1,104 @@
+.services-mainBg {
+    background: #E7EFFD;
+    padding: 70px 0px;
+}
+
+.services-imageSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-descSec {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    height: 100%;
+
+    span {
+        height: 40px;
+        padding: 7px 30px;
+        gap: 10px;
+        background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 36.8px;
+        text-align: left;
+        width: 560px;
+        height: 37px;
+        color: #233F77;
+        margin: 20px 0px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.32px;
+        text-align: left;
+        width: 560px;
+        height: 60px;
+        color: #233F77;
+    }
+
+}
+
+
+.services-rowContent {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-rowCard {
+    background: #233F77BF;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.services-card-icon {
+    height: 60px;
+    width: 60px;
+    background: #8CBE41;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.services-desc-card {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    height: 100%;
+
+    h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.32px;
+        text-align: left;
+        color: #fff;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.24px;
+        text-align: left;
+        color: #fff;
+    }
+
+}
