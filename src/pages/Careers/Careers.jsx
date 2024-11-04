@@ -1,32 +1,110 @@
-import React from 'react'
-import './careers.css'
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+import React from "react";
+import "./careers.css";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+
+import careersImg from "/assets/careers-Image.svg";
 
 const Careers = () => {
   return (
     <>
-    <Header/>
+      <Header />
 
-    <div className='container-fluid career-banner'>
-      <span>Careers</span>
-    </div>
+      <div className="container-fluid contact-mainBg">
+        <span>CAREERS</span>
+        <h1>Shape Your Future with Adyah Tech</h1>
+        <h4>Join a Team Committed to Innovation, Growth, and Impact</h4>
+        <p>
+          Whether you're starting your career or seeking new challenges as an
+          experienced professional, Adyah Tech offers endless opportunities.
+          Focused on client success and innovation, we empower our team to make
+          a meaningful impact across industries. Here, your skills are valued,
+          growth is nurtured, and contributions are recognized. Join us in
+          building tomorrow's enterprise together.
+        </p>
+      </div>
 
-    <div className='container'>
-      <div className='row'>
-        <div className='col-12'>
-          <div className='career-card'>
-            <p>Starting out? Newly experienced? Wherever you are in your career journey, Adyah tech is the right place to start, as we offer energizing, challenging global opportunities, working for top-tier clients in almost every industry. If you're new to the workforce, our experienced counsellors will guide you and support you in picking up the right career path by giving broad exposure to the latest technologies and provide a wide world of opportunity to launch your career in the right direction.</p>
-            <p>Or may be you're an established professional, seeking fresh challenges? Then Adyah tech is right for you. We're growing quickly, expanding rapidly around the globe, resolving new problems for clients, and opening new frontiers to explore. We're always looking for how clients can create more innovative ways of doing business leverage advanced technologies and transform their operations in advance of any economic eventuality.</p>
-            <p>The work code here is "client first," and we breathe it daily. Although, we do work hard, it's worth it. Because our clients truly appreciate what we do. They value the business-technology insights and capabilities we deliver to their organizations, and the success we help enable. The proof: They come back to us again and again, 90+% of the time, and have helped to make us the "fastest growing, top-tier IT services company in the world." Working with Adyah tech is not a job. It's a journey, an experience. There's so much to explore here - even about yourself - that every day is a new day. You want a challenging and enjoyable work environment. We want you to realize your potential. You want to be recognized for your work. We want you to fulfill your aspirations. Today, Adyah tech is building tomorrow's enterprise and guess who's making this possible? Our people - yesterday, today and tomorrow.</p>
+      <div className="container-fluid careers-mainBg">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 col-lg-6">
+              <div className="careers-imageSec">
+                <img src={careersImg} alt="careers image" />
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-lg-6">
+              <div className="careers-descSec">
+                <span>WHAT WE OFFER</span>
+                <h3>Unlock Your Potential with Adyah Tech</h3>
+                <p>
+                  Discover a rewarding work environment where you're encouraged
+                  to push your limits and realize your potential. Our mission is
+                  to support you in reaching your aspirations, with the
+                  recognition and opportunities you deserve. As we build
+                  tomorrow's enterprise, our people remain at the heart of our
+                  journey—past, present, and future.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12">
+              <div className="careers-rowContent">
+                {/* card1 */}
+                <div className="careers-rowCard">
+                  <div className="careers-desc-card">
+                    <div className="careers-card-icon"></div>
+                    <h5>Starting Your Career Journey?</h5>
+                  </div>
+                  <p>
+                    At Adyah Tech, we provide a unique platform for individuals
+                    who are just beginning their professional journey. With
+                    diverse, challenging opportunities in a wide range of
+                    industries, we offer you the chance to work with top-tier
+                    clients around the globe. Whether you're fresh out of school
+                    or early in your career, our experienced counselors are here
+                    to guide you. We'll support you in choosing the right path
+                    by exposing you to the latest technologies and providing a
+                    world of opportunity to start your career on the right
+                    track.
+                  </p>
+                </div>
+                {/* card2 */}
+                <div className="careers-rowCard">
+                  <div className="careers-desc-card">
+                    <div className="careers-card-icon"></div>
+                    <h5>
+                      Seeking Fresh Challenges as an Experienced Professional?
+                    </h5>
+                  </div>
+                  <p>
+                    For seasoned professionals, Adyah Tech is the ideal place to
+                    elevate your career to new heights. With our rapid growth
+                    and global expansion, we bring exciting challenges as we
+                    solve complex problems for clients and explore uncharted
+                    frontiers. Here, you'll find a collaborative environment
+                    where innovative ideas are encouraged, enabling you to
+                    transform operations and leverage advanced technologies that
+                    empower clients to stay ahead of economic uncertainties.
+                    Join us and be part of a team that drives impactful change
+                    and shapes the future of technology.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <Footer/>
+      {/* why choose us component */}
+      <WhyChooseUs />
+
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Careers
+export default Careers;

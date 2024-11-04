@@ -6,11 +6,12 @@ import goalImg from "../../../public/assets/about-goal-image.svg";
 import aboutTeamImg from "../../../public/assets/about-team-image.svg";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 const About = () => {
   return (
     <>
-      {/* navbar */}
+      {/* navbar component*/}
       <Header />
 
       <div className="container-fluid contact-mainBg">
@@ -86,59 +87,15 @@ const About = () => {
         </div>
       </div>
 
-      {/* <div className="container vision-mainbg">
-        <div className="row">
-          <div className="col-4">
-            <div className="vision">
-              <div className="vision-cardimg">
-                <img src={visionImg} alt="vision image" />
-              </div>
-              <div className="vision-text">
-                <h4>Vision</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  aliquid eligendi eum minus.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div className="col-4">
-            <div className="vision">
-              <div className="vision-cardimg">
-                <img src={visionImg} alt="vision image" />
-              </div>
-              <div className="vision-text">
-                <h4>Mission</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  aliquid eligendi eum minus.
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* why choose us component */}
+      <WhyChooseUs />
+  
 
-          <div className="col-4">
-            <div className="vision">
-              <div className="vision-cardimg">
-                <img src={visionImg} alt="vision image" />
-              </div>
-              <div className="vision-text">
-                <h4>Values</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  aliquid eligendi eum minus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* home page contact card */}
+      {/* home page contact card component */}
       <ContactCard />
 
-      {/* footer */}
+      {/* footer component */}
       <Footer />
     </>
   );

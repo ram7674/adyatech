@@ -80,3 +80,27 @@
     height: 7px;
     background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
 }
+
+
+
+/* mobile responsive */
+@media screen and (max-width: 767px) {
+
+    .footer-logo {
+        height: 67px;
+    }
+
+    .footer-copy-sec {
+        flex-direction: column;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+}
+
+/* tablet responsive */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}

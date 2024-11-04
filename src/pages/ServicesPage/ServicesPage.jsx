@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./services.css";
+import "./servicespage.css";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import ContactCard from "../../components/ContactCard/ContactCard";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 // Import the JSON data
 import data from "../../data/data.json";
-
 
 
 const Services = () => {
@@ -43,7 +43,7 @@ const Services = () => {
             <div className="row">
               <div className="col-sm-12 col-lg-6">
                 <div className="services-imageSec">
-                  <img src={service.image} alt={service.title} />
+                  <img src={service.image} alt={service.title} className="services-page-img" />
                 </div>
               </div>
 
@@ -74,6 +74,10 @@ const Services = () => {
           </div>
         </div>
       )}
+
+
+      {/* why choose us component */}
+      <WhyChooseUs />
 
       {/* home page contact component */}
       <ContactCard />

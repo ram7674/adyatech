@@ -38,28 +38,28 @@ const Footer = () => {
             <ListGroup variant="flush" className="footer_aitem_align">
               <h5>Services</h5>
               <ListGroup.Item className="footer_items">
-                <Link>IT Staffing & Consulting</Link>
+                <Link to="/services/itStaffingConsulting">IT Staffing & Consulting</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Data Science</Link>
+                <Link to="/services/dataScience">Data Science</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Web Development</Link>
+                <Link to="/services/webDevelopment">Web Development</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Mobile Applications</Link>
+                <Link to="/services/mobileApplications">Mobile Applications</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Cloud Services</Link>
+                <Link to="/services/cloudServices">Cloud Services</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Salesforce</Link>
+                <Link to="/services/salesforce">Salesforce</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Health Care IT</Link>
+                <Link to="/services/healthCareIT">Health Care IT</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Cyber Security</Link>
+                <Link to="/services/cyberSecurity">Cyber Security</Link>
               </ListGroup.Item>
             </ListGroup>
           </Col>
@@ -69,19 +69,25 @@ const Footer = () => {
             <ListGroup variant="flush" className="footer_aitem_align">
               <h5>Quick Links</h5>
               <ListGroup.Item className="footer_items">
-                <Link>Home</Link>
+                <Link to="/" >Home</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>About Us</Link>
+                <Link to="/about">About Us</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Clients</Link>
+                <Link to="/clients">Clients</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Careers</Link>
+                <Link to="/careers">Careers</Link>
               </ListGroup.Item>
               <ListGroup.Item className="footer_items">
-                <Link>Contact Us</Link>
+                <Link>Blog</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link to="/contact">Contact Us</Link>
+              </ListGroup.Item>
+              <ListGroup.Item className="footer_items">
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </ListGroup.Item>
             </ListGroup>
           </Col>
@@ -117,7 +123,7 @@ const Footer = () => {
         {/* Rights Content */}
         <Row className="pt-3">
           <Col className="footer-copy-sec">
-            <p>Copyright &copy; 2022 Adyahtech. All Rights Reserved</p>
+            <p>Copyright &copy; 2024 Adyahtech. All Rights Reserved</p>
 
             <ListGroup horizontal>
               <ListGroup.Item className="footer_icons">

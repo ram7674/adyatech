@@ -21,39 +21,134 @@
     },
     "dataScience": {
       "title": "Data Science",
-      "description": "Harness the power of your data with our advanced analytics and machine learning services.",
+      "description": "Harness the power of data to make strategic, data-driven decisions with solutions in analytics, AI, and predictive modeling.",
       "image": "/assets/data-science.svg",
       "rowCards": [
         {
-          "title": "Advanced Analytics",
-          "description": "We analyze your data to provide actionable insights that drive business decisions."
+          "title": "Advanced Data Modeling",
+          "description": "Transform raw data into actionable insights."
         },
         {
-          "title": "Machine Learning Models",
-          "description": "We build and deploy machine learning models that optimize your operations."
+          "title": "Machine Learning Solutions",
+          "description": "Use AI to enhance predictions and automation."
         },
         {
-          "title": "Predictive Analysis",
-          "description": "Predict future trends and outcomes using state-of-the-art data science techniques."
+          "title": "Real-Time Analytics",
+          "description": "Access immediate data insights for fast decision-making."
         }
       ]
     },
     "webDevelopment": {
       "title": "Web Development",
-      "description": "From sleek websites to robust e-commerce solutions, we develop platforms that engage users.",
+      "description": "Build robust, user-centered websites tailored to meet your business goals with responsive designs and optimized performance.",
       "image": "/assets/web-development.svg",
       "rowCards": [
         {
-          "title": "Responsive Web Design",
-          "description": "Websites that adapt seamlessly to any device."
+          "title": "Responsive & Custom Design",
+          "description": "Adaptable, visually engaging websites tailored to your audience."
         },
         {
-          "title": "E-Commerce Solutions",
-          "description": "Customized e-commerce platforms that drive conversions."
+          "title": "Scalable Architecture",
+          "description": " Flexible platforms that evolve with your business."
         },
         {
-          "title": "Content Management Systems",
-          "description": "We build powerful CMS platforms for easy content management."
+          "title": "SEO & Performance Optimization",
+          "description": "Improved speed and visibility for a better user experience."
+        }
+      ]
+    },
+    "mobileApplications": {
+      "title": "mobile Applications",
+      "description": "eliver a seamless experience to your users with custom mobile applications designed for both iOS and Android platforms.",
+      "image": "/assets/mobile-application.svg",
+      "rowCards": [
+        {
+          "title": "Cross-Platform Compatibility",
+          "description": "Apps optimized for various devices and operating systems."
+        },
+        {
+          "title": "User-Centric Design",
+          "description": " Intuitive, engaging interfaces to enhance user experience."
+        },
+        {
+          "title": "Integration with Backend Systems",
+          "description": "Smooth data flow between the app and backend systems."
+        }
+      ]
+    },
+    "cloudServices": {
+      "title": "cloud Services",
+      "description": "Optimize operations with scalable cloud solutions that offer flexibility, security, and cost savings.",
+      "image": "/assets/cloud-services.svg",
+      "rowCards": [
+        {
+          "title": "Flexible Cloud Solutions",
+          "description": "Choose the right cloud configuration for your needs."
+        },
+        {
+          "title": "High Availability & Security",
+          "description": "Ensure continuous operation and secure data storage."
+        },
+        {
+          "title": "Cost-Efficiency",
+          "description": "Minimize expenses through optimized resource use."
+        }
+      ]
+    },
+    "salesforce": {
+      "title": "sales force",
+      "description": "Maximize customer relationship management with customized Salesforce solutions that integrate smoothly with your business processes.",
+      "image": "/assets/sales-force.svg",
+      "rowCards": [
+        {
+          "title": "Custom Configuration",
+          "description": "Adapt Salesforce functionalities to align with workflows."
+        },
+        {
+          "title": "Seamless Integrations",
+          "description": "Connect Salesforce with existing systems for streamlined operations."
+        },
+        {
+          "title": "Enhanced CRM Experience",
+          "description": "Empower teams to increase productivity and customer engagement."
+        }
+      ]
+    },
+    "healthCareIT": {
+      "title": "health CareIT",
+      "description": "Empower healthcare providers with secure, compliant IT solutions that enhance patient care and operational efficiency.",
+      "image": "/assets/health-care-it.svg",
+      "rowCards": [
+        {
+          "title": "Electronic Health Records Integration",
+          "description": "Simplify patient data management across systems."
+        },
+        {
+          "title": "Patient Data Security",
+          "description": "Protect sensitive data with robust security protocols."
+        },
+        {
+          "title": "Regulatory Compliance",
+          "description": " Meet healthcare standards with tailored compliance solutions."
+        }
+      ]
+    },
+    "cyberSecurity": {
+      "title": "cyber Security",
+      "description": "Safeguard your digital assets with proactive cybersecurity measures that mitigate risks and protect against evolving threats.",
+      "image": "/assets/cyber-security.svg",
+      "rowCards": [
+        {
+          "title": "Real-Time Threat Monitoring",
+          "description": "Detect and mitigate threats before they impact operations."
+        },
+        {
+          "title": "Comprehensive Security Audits",
+          "description": "Identify and address potential vulnerabilities."
+        },
+        {
+          "title": "Proactive Defense Solutions",
+          "description": "Adaptive security measures to counter emerging threats."
         }
       ]
     }

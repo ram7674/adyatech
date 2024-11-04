@@ -3,6 +3,7 @@ import "./clients.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 const Clients = () => {
   return (
@@ -10,9 +11,9 @@ const Clients = () => {
       {/* navbar */}
       <Header />
 
-      <div className="container-fluid contact-mainBg">
+      <div className="container-fluid Client-mainBg-contaner">
         <span>Our Valued Clients</span>
-        <h1 className="clients-main-tit">
+        <h1>
           Building Lasting Partnerships Across Industries
         </h1>
         <h4>
@@ -142,6 +143,10 @@ const Clients = () => {
           </div>
         </div>
       </div>
+
+      {/* why choose us component */}
+      <WhyChooseUs />
+
 
       {/* home page contact component */}
       <ContactCard />

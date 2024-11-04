@@ -190,52 +190,62 @@ const Contact = () => {
       </div>
 
       {/* contact address container */}
-      <div className="contact-addresCont">
-        {/* left card */}
-        <div className="contact-addresLeft">
-          {/* card1 */}
-          <div className="address-detailsCard">
-            <h4>Let's Talk</h4>
-            <div className="address-iconsCard">
-              <div className="address-iconCont">
-                <img src={contactCallIcon} alt="contact call icon" />
-              </div>
-              <span>+1 (470) - 508 - 5128</span>
-            </div>
-          </div>
-          {/* card2 */}
-          <div className="address-detailsCard">
-            <h4>Get Connect</h4>
-            <div className="address-iconsCard">
-              <div className="address-iconCont">
-                <img src={contactMaillIcon} alt="contact call icon" />
-              </div>
+      <div className="container-fluid contact-maps-mainCard">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="contact-addresCont">
+                {/* left card */}
+                <div className="contact-addresLeft">
+                  {/* card1 */}
+                  <div className="address-detailsCard">
+                    <h4>Let's Talk</h4>
+                    <div className="address-iconsCard">
+                      <div className="address-iconCont">
+                        <img src={contactCallIcon} alt="contact call icon" />
+                      </div>
+                      <span>+1 (470) - 508 - 5128</span>
+                    </div>
+                  </div>
+                  {/* card2 */}
+                  <div className="address-detailsCard">
+                    <h4>Get Connect</h4>
+                    <div className="address-iconsCard">
+                      <div className="address-iconCont">
+                        <img src={contactMaillIcon} alt="contact call icon" />
+                      </div>
 
-              <span>h1bcap@adyahtech.com</span>
-            </div>
-          </div>
-          {/* card3 */}
-          <div className="address-detailsCard">
-            <h4>Find Us</h4>
-            <div className="address-iconsCard">
-              <div className="address-iconCont">
-                <img src={contactAddressIcon} alt="contact call icon" />
-              </div>
+                      <span>h1bcap@adyahtech.com</span>
+                    </div>
+                  </div>
+                  {/* card3 */}
+                  <div className="address-detailsCard">
+                    <h4>Find Us</h4>
+                    <div className="address-iconsCard">
+                      <div className="address-iconCont">
+                        <img src={contactAddressIcon} alt="contact call icon" />
+                      </div>
 
-              <span>4555 Mansell Rd # 300 Alpharetta, GA 30022, USA</span>
+                      <span>
+                        4555 Mansell Rd # 300 Alpharetta, GA 30022, USA
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                {/* right card */}
+                <div className="contact-addresRight">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579482!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1730295819302!5m2!1sen!2sin"
+                    className="contact-formCont"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        {/* right card */}
-        <div className="contact-addresRight">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579482!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1730295819302!5m2!1sen!2sin"
-            className="contact-formCont"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
         </div>
       </div>
 

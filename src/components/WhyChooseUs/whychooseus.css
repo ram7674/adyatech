@@ -1,0 +1,101 @@
+/* why choose us */
+.why-chooseMainBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+  background: #E7EFFD;
+}
+
+.why-choose-left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-parent {
+
+  span {
+    height: 40px;
+    padding: 7px 30px;
+    gap: 10px;
+    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .why-choose-mainTit {
+    width: 450px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36.8px;
+    text-align: left;
+    color: #233F77;
+    margin: 20px 0px;
+  }
+
+}
+
+.why-choose-child {
+  display: flex;
+  justify-content: start;
+  align-items: self-start;
+  flex-wrap: wrap;
+}
+
+.why-choose-card {
+  background: #233F77BF;
+  color: #fff;
+  width: 47%;
+  padding: 10px;
+  gap: 10px;
+  margin: 6px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  h4 {
+    font-size: 16px;
+    margin: 0px;
+    color: #fff;
+  }
+
+  p {
+
+    font-size: 12px;
+    margin: 0px;
+
+  }
+
+}
+
+.why-iconCard {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #87BC47;
+}
+
+
+
+/* mobile responsive */
+@media screen and (max-width: 767px) {
+
+
+    .why-choose-mainTit {
+        width: 100% !important;
+        font-size: 30px;
+    }
+
+    .why-choose-card {
+      width: 100%;
+    }
+
+}
+
+
+/* tablet responsive */
+@media screen and (min-width: 768px) and (max-width: 1023px) {}

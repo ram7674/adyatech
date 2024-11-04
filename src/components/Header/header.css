@@ -1,6 +1,7 @@
 .navbar_mainContainer {
     padding: 0px !important;
-    z-index: 99999 !important;
+    z-index: 9 !important;
+    background-color: #fff;
 }
 
 .nav_CardContainer{
@@ -53,6 +54,8 @@
 .logo {
     height: 60px;
 }
+
+
 
 .navbar-contBtn{
     background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
@@ -157,6 +160,10 @@
 
     .logo {
         height: 53px;
+    }
+
+    .navbar-contBtn {
+        height: 37px;
     }
 
 }

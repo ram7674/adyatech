@@ -6,13 +6,22 @@ import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
 
+/* images importing */
 import homePageImg from "/assets/home-pageimg.svg";
-import whyChooseImg from "/assets/why-chooseimg.svg";
 import whatWeDoImage from "/assets/what-we-do-Image.svg";
-import ConsultaionImg from "../../../public/assets/how-it-conusultant-img.svg"
-import DiscussionImg from "../../../public/assets/how-it-discussion-img.svg"
-import ExecutionImg from "../../../public/assets/how-it-execution-img.png"
-import ArrowImg from "../../../public/assets/how-it-arrow-img.svg"
+import ConsultaionImg from "../../../public/assets/how-it-conusultant-img.svg";
+import DiscussionImg from "../../../public/assets/how-it-discussion-img.svg";
+import ExecutionImg from "../../../public/assets/how-it-execution-img.png";
+import ArrowImg from "../../../public/assets/how-it-arrow-img.svg";
+import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+
+/* icons importing */
+import iconItStaff from '../../../public/assets/icon-it-staff-consulting.svg'
+import iconDataStaff from '../../../public/assets/icon-it-staff-consulting.svg'
+import iconWebDevelopment from '../../../public/assets/icon-it-staff-consulting.svg'
+import iconMobileApp from '../../../public/assets/icon-it-staff-consulting.svg'
+import iconCloudServices from '../../../public/assets/icon-it-staff-consulting.svg'
+import iconSalesForce from '../../../public/assets/icon-it-staff-consulting.svg'
 
 
 const Home = () => {
@@ -106,155 +115,181 @@ const Home = () => {
                   {/* card1 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
+                      <div className="offer-icon">
+                        <img src={iconItStaff} alt="icon IT Staffing & Consulting" />
+                      </div>
                       <h4>IT Staffing & Consulting</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        We provide flexible, high-quality staffing solutions
+                        that align with your unique IT needs, connecting you
+                        with specialized professionals for both short- and
+                        long-term projects.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/itStaffingConsulting">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card2 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconDataStaff} alt="icon IT Staffing & Consulting" />
+                      </div>
+                      <h4>Data Science</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Harness the power of data to make strategic, data-driven
+                        decisions with analytics, AI, and predictive modeling,
+                        enabling insights that drive growth and competitive
+                        advantage.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/dataScience">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card3 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconWebDevelopment} alt="icon Web Development" />
+                      </div>
+                      <h4>Web Development</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Build robust, user-centered websites tailored to meet
+                        your business goals with responsive designs, optimized
+                        performance, enhanced accessibility, and advanced SEO
+                        integration.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/webDevelopment">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card4 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconMobileApp} alt="icon Mobile Applications" />
+                      </div>
+                      <h4>Mobile Applications</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Deliver a seamless experience to your users with custom
+                        mobile applications designed for iOS and Android,
+                        ensuring engagement, functionality, and intuitive
+                        navigation.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/mobileApplications">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card5 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconCloudServices} alt="icon Cloud Services" />
+                      </div>
+                      <h4>Cloud Services</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Optimize operations with scalable cloud solutions that
+                        offer flexibility, security, cost savings, enhanced
+                        performance, and increased reliability.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/cloudServices">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card6 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconSalesForce} alt="icon Salesforce" />
+                      </div>
+                      <h4>Salesforce</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Maximize customer relationship management with
+                        customized Salesforce solutions that integrate smoothly
+                        with your business processes.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/salesforce">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card7 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconItStaff} alt="icon IT Staffing & Consulting" />
+                      </div>
+                      <h4>Health Care IT</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Empower healthcare providers with secure, compliant IT
+                        solutions that enhance patient care, streamline
+                        operations, and improve overall efficiency.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/healthCareIT">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card8 */}
                   <div className="offers-card">
                     <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                      <div className="offer-icon">
+                      <img src={iconDataStaff} alt="icon Cyber Security" />
+                      </div>
+                      <h4>Cyber Security</h4>
                     </div>
 
                     <div className="inner-card-data">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
+                        Safeguard your digital assets with proactive
+                        cybersecurity measures that mitigate risks, enhance
+                        security, and protect against evolving threats, ensuring
+                        protection.
                       </p>
-                      <button>Learn more</button>
+                      <Link to="/services/cyberSecurity">
+                        <button>Learn more</button>
+                      </Link>
                     </div>
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card9 */}
-                  <div className="offers-card">
-                    <div className="offer-icon-card">
-                      <div className="offer-icon"></div>
-                      <h4>IT Staffing & Consulting</h4>
+                  <div className="click-here-sec">
+                    <div className="click-circle-card">
+                      <Link to="/services"><button>Clic Here For More Info</button></Link>
                     </div>
-
-                    <div className="inner-card-data">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Sed reiciendis incidunt aspernatur possimus facere
-                        minima tempore o
-                      </p>
-                      <button>Learn more</button>
-                    </div>
-                    <div className="offer-gradient"></div>
                   </div>
                 </div>
               </div>
@@ -277,12 +312,20 @@ const Home = () => {
                   <img src={ConsultaionImg} alt="Consultation" />
                   <h4>Consultation</h4>
                 </div>
-                <img src={ArrowImg} alt="arrow image" />
+                <img
+                  src={ArrowImg}
+                  alt="arrow image"
+                  className="how-it-sm-rotate"
+                />
                 <div className="how-it-image-Sec">
                   <img src={DiscussionImg} alt="Discussion & Planning" />
                   <h4>Discussion & Planning</h4>
                 </div>
-                <img src={ArrowImg} alt="arrow image" />
+                <img
+                  src={ArrowImg}
+                  alt="arrow image"
+                  className="how-it-sm-rotate"
+                />
                 <div className="how-it-image-Sec">
                   <img src={ExecutionImg} alt="Execution" />
                   <h4>Execution</h4>
@@ -294,77 +337,7 @@ const Home = () => {
       </div>
 
       {/* why choose us */}
-      <div className="container-fluid why-chooseMainBg">
-        <div className="container">
-          <div className="row">
-            {/* left card */}
-            <div className="col-lg-6">
-              <div className="why-choose-parent">
-                <span>WHY CHOOSE US</span>
-                <h4 className="why-choose-mainTit">
-                  Results-Driven Digital Solutions Tailored for You
-                </h4>
-                <p>
-                  At Adyah Tech, we deliver cutting-edge digital marketing
-                  solutions designed to elevate your brand in a competitive
-                  landscape. Our team of experts is committed to driving
-                  measurable growth, enhancing brand presence, and ensuring
-                  long-term success for your business.
-                </p>
-                <div className="why-choose-child">
-                  {/* child1 */}
-                  <div className="why-choose-card">
-                    <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child2 */}
-                  <div className="why-choose-card">
-                    <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child3 */}
-                  <div className="why-choose-card">
-                    <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                  {/* child4 */}
-                  <div className="why-choose-card">
-                    <div className="why-iconCard"></div>
-                    <h4>Innovative Strategies</h4>
-                    <p>
-                      Our team drives growth through data-backed digital
-                      marketing strategies that adapt to your unique needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* right card */}
-            <div className="col-lg-6">
-              <div className="why-choose-left">
-                <img
-                  src={whyChooseImg}
-                  alt=" experience"
-                  className="why-choose-img"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <WhyChooseUs />
 
       {/* home page contact card */}
       <ContactCard />
