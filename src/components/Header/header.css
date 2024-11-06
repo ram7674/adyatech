@@ -168,7 +168,19 @@
 /* medium responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .navbar_mainContainer {
-        padding: 10px 0px 10px 0px !important;
+        padding: 10px 15px!important;
+    }
+    .navbar-brand {
+        width: 21%;
+        margin-left: 33px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 8px;
+    }
+
+    .navbar-contBtn {
+        height: 43px;
+        margin-bottom: 11px;
     }
 
     .navbar_items {

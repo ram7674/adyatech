@@ -112,4 +112,12 @@
 
 
 /* tablet responsive */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .why-choose-left {
+    padding-top: 40px;
+  }
+  
+
+
+}

@@ -18,7 +18,7 @@ const Footer = () => {
       <Container>
         <Row>
           {/* Company Logo */}
-          <Col md={5} sm={5}>
+          <Col sm={5} md={7} lg={5}>
             <div className="mb-3">
               <Image
                 src={footerlogo}
@@ -34,7 +34,7 @@ const Footer = () => {
           </Col>
 
           {/* Services */}
-          <Col md={2} sm={6}>
+          <Col sm={6} md={5} lg={2}>
             <ListGroup variant="flush" className="footer_aitem_align">
               <h5>Services</h5>
               <ListGroup.Item className="footer_items">
@@ -65,7 +65,7 @@ const Footer = () => {
           </Col>
 
           {/* Quick Links */}
-          <Col md={2} sm={6}>
+          <Col sm={6} md={7} lg={2}>
             <ListGroup variant="flush" className="footer_aitem_align">
               <h5>Quick Links</h5>
               <ListGroup.Item className="footer_items">
@@ -93,24 +93,25 @@ const Footer = () => {
           </Col>
 
           {/* Social Links */}
-          <Col md={3} sm={6}>
+          <Col sm={6} md={5} lg={3} >
             <h5 className="socila_linktit">Contact</h5>
 
             {/* Contact Details with Icons */}
             <ul className="list-unstyled">
               <li>
-                <img src={addressIcon} alt="" /> Address: 123 Street, City, Country
+                <img src={addressIcon} alt="" /> Address: 4555 Mansell Rd # 300
+                Alpharetta, GA 30022, USA
               </li>
               <li>
                 <img src={callIcon} alt="" /> Phone:{" "}
                 <a href="tel:+123456789" className="text-light">
-                  +123 456 789
+                +1 (470) - 508 - 5128
                 </a>
               </li>
               <li>
                 <img src={emailIcon} alt="" /> Email:{" "}
                 <a href="mailto:info@company.com" className="text-light">
-                  info@company.com
+                h1bcap@adyahtech.com
                 </a>
               </li>
             </ul>

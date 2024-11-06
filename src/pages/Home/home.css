@@ -489,7 +489,88 @@ h1 {
 
 
 /* tablet responsive */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .hero_content_card {
+    align-items: center;
+    margin-bottom: 35px;
+
+    h1 {
+      text-align: center;
+      width: 100%;
+      margin: 20px 0px;
+      font-size: 36px;
+  }
+
+    p {
+      text-align: center;
+    }
+
+  }
+
+  .hero_section {
+    height: 100%;
+    padding: 70px 0px;
+  }
+
+  .hero_gif_card {
+    padding: 70px 0px 0px;
+    img {
+        height: 227px;
+    }
+
+  }
+
+  .why-we-secBg {
+    padding: 70px 0px !important;
+  }
+
+  .culture-card {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .culture-inner-card {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .why-choose-left {
+
+    img {
+      height: 283px;
+    }
+
+  }
+
+  .offers-card {
+    width: 47%;
+  }
+
+  .click-here-sec {
+    width: 100%;
+    padding: 30px 0px 0px;
+  }
+
+  .how-it-image-Sec {
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      height: 140px;
+    }
+
+    h4 {
+      font-size: 15px;
+      line-height: 24.48px;
+      text-align: center;
+    }
+
+  }
+
+}
 
 
 

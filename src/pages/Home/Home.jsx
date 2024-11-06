@@ -36,7 +36,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             {/*  */}
-            <div className="col-lg-6 hero_content_card">
+            <div className="col-md-12 col-lg-6 hero_content_card">
               <span>WELCOME TO ADYAH TECH</span>
               <h1>Innovative IT Solutions for Your Business Success</h1>
               <p>
@@ -46,7 +46,7 @@ const Home = () => {
               <Link to="/contact"><button>Contact Now</button></Link>
             </div>
             {/*  */}
-            <div className="col-md-6 col-lg-6 hero_gif_card">
+            <div className="col-md-12 col-lg-6 hero_gif_card">
               <img src={homePageImg} alt="IT Consulting GIF" />
             </div>
           </div>
