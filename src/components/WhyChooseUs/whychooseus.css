@@ -93,12 +93,19 @@
 
 
     .why-choose-mainTit {
-        width: 100% !important;
-        font-size: 30px;
+      width: 100% !important;
+      font-size: 26px !important;
+      line-height: 32.8px;
+      margin: 12px 0px;
     }
 
     .why-choose-card {
       width: 100%;
+    }
+
+    p{
+      font-size: 14px;
+      text-align: justify;
     }
 
 }

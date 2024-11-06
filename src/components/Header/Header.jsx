@@ -1,6 +1,6 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { NavLink, useNavigate } from "react-router-dom"; 
+import { NavLink, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
 import logoImage from "/assets/adyatech-logo-for-website.png";
@@ -46,7 +46,7 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/about">
               About Us
             </Nav.Link>
-            <NavDropdown 
+            <NavDropdown
               title={<span onClick={handleTitleClick}>Services</span>}
               className="services-dropdown"
               show={isDropdownOpen} // Control dropdown visibility
@@ -54,7 +54,10 @@ const Header = () => {
               onMouseLeave={handleMouseLeave} // Hide on leave for desktop
               onToggle={toggleDropdown} // Toggle on click for mobile
             >
-              <NavDropdown.Item as={NavLink} to="/services/itStaffingConsulting">
+              <NavDropdown.Item
+                as={NavLink}
+                to="/services/itStaffingConsulting"
+              >
                 IT Staffing & Consulting
               </NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/services/dataScience">
@@ -89,7 +92,11 @@ const Header = () => {
           </Nav>
 
           <Nav>
-            <Nav.Link as={NavLink} to="/contact" className="navbar-contBtn">
+            <Nav.Link
+              as={NavLink}
+              to="/contact"
+              className="navbar-contBtn"
+            >
               Contact Us
             </Nav.Link>
           </Nav>

@@ -3,6 +3,8 @@
     padding: 70px 0px;
 }
 
+
+
 .careers-imageSec {
     display: flex;
     justify-content: center;
@@ -103,6 +105,77 @@
         width: 374.09px;
         height: 30px;
         color: #fff;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .careers-imageSec {
+        
+        margin-bottom: 50px;
+
+        img {
+            height: 200px;
+        }
+
+    }
+
+    .careers-descSec {
+
+        h3 {
+            font-size: 25px;
+            line-height: 31.8px;
+            width: 100%;
+            text-align: center;
+            height: 53px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20.32px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+
+    }
+
+    .careers-rowContent {
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .careers-rowCard {
+        width: 100%;
+
+        p {
+            font-size: 13px;
+            line-height: 20.32px;
+            text-align: center;
+            margin: 10px 0px 0px;
+        }
+
+    }
+
+    .careers-desc-card {
+
+        flex-direction: column;
+
+        h5 {
+            font-size: 19px;
+            line-height: 23.48px;
+            text-align: center;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+        }
+
     }
 
 }

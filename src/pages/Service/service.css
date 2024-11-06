@@ -84,3 +84,49 @@
     }
 
 }
+
+
+
+/* mobile responsive */
+@media screen and (max-width: 767px) {
+
+    .service-secTitCard {
+
+        h3 {
+            font-size: 25px;
+            line-height: 32.8px;
+            width: 100%;
+            height: 86px;
+        }
+        
+    }
+
+    .services-all-itemsContainer {
+        flex-direction: column;
+    }
+
+    .services-itemsCard {
+       width: 100%;
+       flex-direction: column;
+    }
+
+    .services-descCard {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            text-align: center;
+        }
+
+    }
+
+}
+
+
+/* medium device responsive */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}

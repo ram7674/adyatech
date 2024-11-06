@@ -111,9 +111,6 @@
 
 
 
-
-
-
 /* Enable hover dropdown for 'Services' */
 .navbar_mainContainer .dropdown:hover .dropdown-menu {
     display: block;
