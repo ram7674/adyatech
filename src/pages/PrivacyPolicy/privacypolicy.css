@@ -51,7 +51,9 @@
     height: 60px;
     width: 60px;
     border-radius: 8px;
-    background: #8CBE41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .privacy-righi-card {

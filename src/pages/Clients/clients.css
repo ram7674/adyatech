@@ -102,8 +102,15 @@
 .iconCard {
     height: 100px;
     width: 100px;
-    background: #8CBE41;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100%;
+    }
+
 }
 
 .clients-iconCard {

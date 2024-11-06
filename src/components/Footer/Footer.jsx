@@ -3,10 +3,10 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import footerlogo from "../../../public/assets/adyatech-logo-for-website-white.png";
-import callIcon from "../../../public/assets/call-icon.svg";
-import addressIcon from "../../../public/assets/address-icon.svg";
-import emailIcon from "../../../public/assets/email-icon.svg";
+import footerlogo from "/assets/adyatech-logo-for-website-white.png";
+import callIcon from "/assets/call-icon.svg";
+import addressIcon from "/assets/address-icon.svg";
+import emailIcon from "/assets/email-icon.svg";
 
 const Footer = () => {
   return (

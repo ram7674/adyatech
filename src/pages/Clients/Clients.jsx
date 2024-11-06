@@ -5,6 +5,13 @@ import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
+import healthCare from '/assets/clients-healthCare.svg'
+import finance from '/assets/clients-finance.svg'
+import education from '/assets/clients-education.svg'
+import logistics from '/assets/clients-logisticks.svg'
+import telecommunication from '/assets/clients-telecom.svg'
+import publicSelector from '/assets/clients-public.svg'
+
 const Clients = () => {
   return (
     <>
@@ -44,7 +51,9 @@ const Clients = () => {
                 {/* card1 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                      <img src={healthCare} alt="Health care icon" />
+                    </div>
                     <h5>Healthcare</h5>
                   </div>
 
@@ -60,7 +69,9 @@ const Clients = () => {
                 {/* card2 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                    <img src={finance} alt="Finance icon" />
+                    </div>
                     <h5>Finance & E-commerce</h5>
                   </div>
 
@@ -77,7 +88,9 @@ const Clients = () => {
                 {/* card3 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                    <img src={education} alt="Education icon" />
+                    </div>
                     <h5>Education</h5>
                   </div>
 
@@ -93,7 +106,9 @@ const Clients = () => {
                 {/* card4 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                    <img src={logistics} alt="Logistics icon" />
+                    </div>
                     <h5>Logistics & Manufacturing</h5>
                   </div>
 
@@ -109,7 +124,9 @@ const Clients = () => {
                 {/* card5 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                    <img src={telecommunication} alt="Telecommunications icon" />
+                    </div>
                     <h5>Telecommunications</h5>
                   </div>
 
@@ -125,7 +142,9 @@ const Clients = () => {
                 {/* card6 */}
                 <div className="clients-indu-cards">
                   <div className="clients-iconCard">
-                    <div className="iconCard"></div>
+                    <div className="iconCard">
+                      <img src={publicSelector} alt="Public Sector icon" />
+                    </div>
                     <h5>Public Sector & Government</h5>
                   </div>
 

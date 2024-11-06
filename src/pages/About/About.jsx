@@ -1,12 +1,14 @@
 import React from "react";
+import "./about.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import "./about.css";
-import goalImg from "../../../public/assets/about-goal-image.svg";
-import aboutTeamImg from "../../../public/assets/about-team-image.svg";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+
+import goalImg from "/assets/about-goal-image.svg";
+import aboutTeamImg from "/assets/about-team-image.svg";
+
 
 const About = () => {
   return (

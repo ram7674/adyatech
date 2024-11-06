@@ -62,7 +62,7 @@
 }
 
 .services-rowCard {
-    background: #233F77BF;
+    background: #233F77;
     width: 60%;
     display: flex;
     justify-content: flex-start;
@@ -75,9 +75,11 @@
 .services-card-icon {
     height: 60px;
     width: 60px;
-    background: #8CBE41;
-    border-radius: 8px;
+    border-radius: 30px;
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-desc-card {

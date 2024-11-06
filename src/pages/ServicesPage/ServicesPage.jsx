@@ -6,6 +6,8 @@ import Header from "../../components/Header/Header";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
+import arrowBrnIcon from '/assets/service-arrow-btn.svg'
+
 // Import the JSON data
 import data from "../../data/data.json";
 
@@ -61,7 +63,9 @@ const Services = () => {
                 <div className="services-rowContent">
                   {service.rowCards.map((card, index) => (
                     <div className="services-rowCard" key={index}>
-                      <div className="services-card-icon"></div>
+                      <div className="services-card-icon">
+                        <img src={arrowBrnIcon} alt={card.title} />
+                      </div>
                       <div className="services-desc-card">
                         <h5>{card.title}</h5>
                         <p>{card.description}</p>

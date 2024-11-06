@@ -5,6 +5,8 @@ import Footer from "../../components/Footer/Footer";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 import careersImg from "/assets/careers-Image.svg";
+import careerStartImg from "/assets/carrers-starting.svg";
+import careerSeekImg from "/assets/carrers-seeking.svg";
 
 const Careers = () => {
   return (
@@ -56,7 +58,9 @@ const Careers = () => {
                 {/* card1 */}
                 <div className="careers-rowCard">
                   <div className="careers-desc-card">
-                    <div className="careers-card-icon"></div>
+                    <div className="careers-card-icon">
+                      <img src={careerStartImg} alt="Starting Your Career Journey" />
+                    </div>
                     <h5>Starting Your Career Journey?</h5>
                   </div>
                   <p>
@@ -75,7 +79,9 @@ const Careers = () => {
                 {/* card2 */}
                 <div className="careers-rowCard">
                   <div className="careers-desc-card">
-                    <div className="careers-card-icon"></div>
+                    <div className="careers-card-icon">
+                    <img src={careerSeekImg} alt="Seeking Fresh Challenges" />
+                    </div>
                     <h5>
                       Seeking Fresh Challenges as an Experienced Professional?
                     </h5>

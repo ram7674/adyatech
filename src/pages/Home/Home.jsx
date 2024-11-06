@@ -9,20 +9,21 @@ import OurCulture from "../../components/OurCulture/OurCulture";
 /* images importing */
 import homePageImg from "/assets/home-pageimg.svg";
 import whatWeDoImage from "/assets/what-we-do-Image.svg";
-import ConsultaionImg from "../../../public/assets/how-it-conusultant-img.svg";
-import DiscussionImg from "../../../public/assets/how-it-discussion-img.svg";
-import ExecutionImg from "../../../public/assets/how-it-execution-img.png";
-import ArrowImg from "../../../public/assets/how-it-arrow-img.svg";
+import ConsultaionImg from "/assets/how-it-conusultant-img.svg";
+import DiscussionImg from "/assets/how-it-discussion-img.svg";
+import ExecutionImg from "/assets/how-it-execution-img.png";
+import ArrowImg from "/assets/how-it-arrow-img.svg";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 /* icons importing */
-import iconItStaff from '../../../public/assets/icon-it-staff-consulting.svg'
-import iconDataStaff from '../../../public/assets/icon-it-staff-consulting.svg'
-import iconWebDevelopment from '../../../public/assets/icon-it-staff-consulting.svg'
-import iconMobileApp from '../../../public/assets/icon-it-staff-consulting.svg'
-import iconCloudServices from '../../../public/assets/icon-it-staff-consulting.svg'
-import iconSalesForce from '../../../public/assets/icon-it-staff-consulting.svg'
-
+import iconItStaff from "/assets/icon-it-staff-consulting.svg";
+import iconDataScience from "/assets/icon-data-science.svg";
+import iconWebDevelopment from "/assets/icon-web-development.svg";
+import iconMobileApp from "/assets/icon-mobile-application.svg";
+import iconCloudServices from "/assets/icon-cloud-services.svg";
+import iconSalesForce from "/assets/icon-sales-force.svg";
+import iconHealthCare from "/assets/icon-health-care.svg";
+import iconCyberSecurity from "/assets/icon-cyber-security.svg";
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ const Home = () => {
                 Empowering your business with cutting-edge IT staffing, data
                 science, and consulting services
               </p>
-              <button>Contact Now</button>
+              <Link to="/contact"><button>Contact Now</button></Link>
             </div>
             {/*  */}
             <div className="col-md-6 col-lg-6 hero_gif_card">
@@ -116,7 +117,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                        <img src={iconItStaff} alt="icon IT Staffing & Consulting" />
+                        <img
+                          src={iconItStaff}
+                          alt="icon IT Staffing & Consulting"
+                        />
                       </div>
                       <h4>IT Staffing & Consulting</h4>
                     </div>
@@ -138,7 +142,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconDataStaff} alt="icon IT Staffing & Consulting" />
+                        <img
+                          src={iconDataScience}
+                          alt="icon IT Staffing & Consulting"
+                        />
                       </div>
                       <h4>Data Science</h4>
                     </div>
@@ -160,7 +167,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconWebDevelopment} alt="icon Web Development" />
+                        <img
+                          src={iconWebDevelopment}
+                          alt="icon Web Development"
+                        />
                       </div>
                       <h4>Web Development</h4>
                     </div>
@@ -182,7 +192,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconMobileApp} alt="icon Mobile Applications" />
+                        <img
+                          src={iconMobileApp}
+                          alt="icon Mobile Applications"
+                        />
                       </div>
                       <h4>Mobile Applications</h4>
                     </div>
@@ -204,7 +217,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconCloudServices} alt="icon Cloud Services" />
+                        <img
+                          src={iconCloudServices}
+                          alt="icon Cloud Services"
+                        />
                       </div>
                       <h4>Cloud Services</h4>
                     </div>
@@ -225,7 +241,7 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconSalesForce} alt="icon Salesforce" />
+                        <img src={iconSalesForce} alt="icon Sales force" />
                       </div>
                       <h4>Salesforce</h4>
                     </div>
@@ -246,7 +262,7 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconItStaff} alt="icon IT Staffing & Consulting" />
+                        <img src={iconHealthCare} alt="iconHealth Care" />
                       </div>
                       <h4>Health Care IT</h4>
                     </div>
@@ -267,7 +283,10 @@ const Home = () => {
                   <div className="offers-card">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
-                      <img src={iconDataStaff} alt="icon Cyber Security" />
+                        <img
+                          src={iconCyberSecurity}
+                          alt="icon Cyber Security"
+                        />
                       </div>
                       <h4>Cyber Security</h4>
                     </div>
@@ -288,7 +307,9 @@ const Home = () => {
                   {/* card9 */}
                   <div className="click-here-sec">
                     <div className="click-circle-card">
-                      <Link to="/services"><button>Clic Here For More Info</button></Link>
+                      <Link to="/services">
+                        <button>Clic Here For More Info</button>
+                      </Link>
                     </div>
                   </div>
                 </div>

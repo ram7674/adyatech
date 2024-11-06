@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
 import privacyImage from "/assets/privacy-image.svg";
+import privacyIcon from "/assets/privacy-icon.svg";
 
 const PrivacyPolicy = () => {
   return (
@@ -40,7 +41,9 @@ const PrivacyPolicy = () => {
                 {/* card1 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Information Collection and Use</h4>
@@ -57,7 +60,9 @@ const PrivacyPolicy = () => {
                 {/* card2 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Job Applications</h4>
@@ -72,7 +77,9 @@ const PrivacyPolicy = () => {
                 {/* card3 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>User-Generated Content</h4>
@@ -90,7 +97,9 @@ const PrivacyPolicy = () => {
                 {/* card4 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Third-Party Data Hosting</h4>
@@ -109,7 +118,9 @@ const PrivacyPolicy = () => {
                 {/* card5 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Children's Privacy Policy</h4>
@@ -125,7 +136,9 @@ const PrivacyPolicy = () => {
                 {/* card6 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Use of Cookies</h4>
@@ -144,7 +157,9 @@ const PrivacyPolicy = () => {
                 {/* card7 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Third-Party Websites</h4>
@@ -159,7 +174,9 @@ const PrivacyPolicy = () => {
                 {/* card8 */}
                 <div className="privacy-inner-card">
                   {/* left card */}
-                  <div className="privacy-left-card"></div>
+                  <div className="privacy-left-card">
+                    <img src={privacyIcon} alt="icon" />
+                  </div>
                   {/* right card */}
                   <div className="privacy-righi-card">
                     <h4>Changes to This Policy</h4>
