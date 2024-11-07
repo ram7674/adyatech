@@ -58,7 +58,7 @@
       ]
     },
     "mobileApplications": {
-      "title": "mobile Applications",
+      "title": "Mobile Applications",
       "description": "eliver a seamless experience to your users with custom mobile applications designed for both iOS and Android platforms.",
       "image": "/assets/mobile-application.svg",
       "rowCards": [
@@ -77,7 +77,7 @@
       ]
     },
     "cloudServices": {
-      "title": "cloud Services",
+      "title": "Cloud Services",
       "description": "Optimize operations with scalable cloud solutions that offer flexibility, security, and cost savings.",
       "image": "/assets/cloud-services.svg",
       "rowCards": [
@@ -96,7 +96,7 @@
       ]
     },
     "salesforce": {
-      "title": "sales force",
+      "title": "Cales Force",
       "description": "Maximize customer relationship management with customized Salesforce solutions that integrate smoothly with your business processes.",
       "image": "/assets/sales-force.svg",
       "rowCards": [
@@ -115,7 +115,7 @@
       ]
     },
     "healthCareIT": {
-      "title": "health CareIT",
+      "title": "Health CareIT",
       "description": "Empower healthcare providers with secure, compliant IT solutions that enhance patient care and operational efficiency.",
       "image": "/assets/health-care-it.svg",
       "rowCards": [
@@ -134,7 +134,7 @@
       ]
     },
     "cyberSecurity": {
-      "title": "cyber Security",
+      "title": "Cyber Security",
       "description": "Safeguard your digital assets with proactive cybersecurity measures that mitigate risks and protect against evolving threats.",
       "image": "/assets/cyber-security.svg",
       "rowCards": [

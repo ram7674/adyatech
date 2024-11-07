@@ -51,6 +51,7 @@
       text-align: center;
       font-size: 12px;
       display: none;
+      transition: all .2s ease-in-out;
     }
   
   }
@@ -61,5 +62,6 @@
   
   .culture-inner-card:hover p {
     display: block;
+    transition: all .6s ease-in-out;
   }
   

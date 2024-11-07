@@ -44,7 +44,7 @@ const Service = () => {
               </div>
               <div className="services-all-itemsContainer">
                 {/* card1 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={itStaffImage} alt="it-Staff consulting image" />
                   <div className="services-descCard">
                     <h4>IT Staffing & Consulting</h4>
@@ -58,7 +58,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card2 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={dataScienceImage} alt="Data Science image" />
                   <div className="services-descCard">
                     <h4>Data Science</h4>
@@ -72,7 +72,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card3 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={webDevImage} alt="web development image" />
                   <div className="services-descCard">
                     <h4>Web Development</h4>
@@ -86,7 +86,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card4 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={mobileAppImage} alt="mobile application" />
                   <div className="services-descCard">
                     <h4>Mobile Applications</h4>
@@ -99,7 +99,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card5 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={cloudServiceImage} alt="cloud service image" />
                   <div className="services-descCard">
                     <h4>Cloud Services</h4>
@@ -113,7 +113,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card6 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={salesForceImage} alt="sales force image" />
                   <div className="services-descCard">
                     <h4>Salesforce</h4>
@@ -127,7 +127,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card7 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={healthCareItImage} alt="health card it image" />
                   <div className="services-descCard">
                     <h4>Health Care IT</h4>
@@ -141,7 +141,7 @@ const Service = () => {
                   </div>
                 </div>
                 {/* card8 */}
-                <div className="services-itemsCard">
+                <div className="services-itemsCard"  data-aos="fade-up">
                   <img src={cyberSecurImage} alt="cyber security image" />
                   <div className="services-descCard">
                     <h4>Cyber Security</h4>

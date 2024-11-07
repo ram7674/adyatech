@@ -1,7 +1,7 @@
 .navbar_mainContainer {
     padding: 0px !important;
     z-index: 9 !important;
-    background-color: #fff;
+    background-color: #EEF9FF;
 }
 
 .nav_CardContainer{
@@ -58,7 +58,7 @@
 
 
 .navbar-contBtn{
-    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+    background: #233F77;
     height: 24px;
     border-radius: 50px;
     width: 150px;
@@ -70,6 +70,7 @@
 }
 
 .navbar-contBtn:hover {
+    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
     color: #fff !important;
 }
 

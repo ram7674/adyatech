@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
           <div className="row">
             {/* left card */}
             <div className="col-lg-6">
-              <div className="why-choose-parent">
+              <div className="why-choose-parent" data-aos="fade-right">
                 <span>WHY CHOOSE US</span>
                 <h4 className="why-choose-mainTit">
                   Results-Driven Digital Solutions Tailored for You
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                   measurable growth, enhancing brand presence, and ensuring
                   long-term success for your business.
                 </p>
-                <div className="why-choose-child">
+                <div className="why-choose-child" data-aos="fade-up">
                   {/* child1 */}
                   <div className="why-choose-card">
                     <div className="why-iconCard">
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
 
             {/* right card */}
             <div className="col-lg-6">
-              <div className="why-choose-left">
+              <div className="why-choose-left" data-aos="fade-left">
                 <img
                   src={whyChooseImg}
                   alt=" experience"

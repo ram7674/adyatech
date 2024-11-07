@@ -36,7 +36,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             {/*  */}
-            <div className="col-md-12 col-lg-6 hero_content_card">
+            <div className="col-md-12 col-lg-6 hero_content_card" data-aos="fade-up">
               <span>WELCOME TO ADYAH TECH</span>
               <h1>Innovative IT Solutions for Your Business Success</h1>
               <p>
@@ -46,7 +46,7 @@ const Home = () => {
               <Link to="/contact"><button>Contact Now</button></Link>
             </div>
             {/*  */}
-            <div className="col-md-12 col-lg-6 hero_gif_card">
+            <div className="col-md-12 col-lg-6 hero_gif_card" data-aos="fade-up">
               <img src={homePageImg} alt="IT Consulting GIF" />
             </div>
           </div>
@@ -62,7 +62,7 @@ const Home = () => {
           <div className="row">
             {/* left card */}
             <div className="col-lg-6">
-              <div className="why-secParent">
+              <div className="why-secParent" data-aos="fade-right">
                 <span>WHAT WE DO</span>
                 <h4>Elevate Your Digital Impact with Customized Solutions</h4>
                 <p>
@@ -85,7 +85,7 @@ const Home = () => {
 
             {/* right card */}
             <div className="col-lg-6">
-              <div className="why-choose-left">
+              <div className="why-choose-left" data-aos="fade-left">
                 <img
                   src={whatWeDoImage}
                   alt=" experience"
@@ -114,7 +114,7 @@ const Home = () => {
                 {/* inner main card */}
                 <div className="offers-dataCard">
                   {/* card1 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -139,7 +139,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card2 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -164,7 +164,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card3 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -189,7 +189,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card4 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -214,7 +214,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card5 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -238,7 +238,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card6 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img src={iconSalesForce} alt="icon Sales force" />
@@ -259,7 +259,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card7 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img src={iconHealthCare} alt="iconHealth Care" />
@@ -280,7 +280,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card8 */}
-                  <div className="offers-card">
+                  <div className="offers-card" data-aos="fade-up">
                     <div className="offer-icon-card">
                       <div className="offer-icon">
                         <img
@@ -305,7 +305,7 @@ const Home = () => {
                     <div className="offer-gradient"></div>
                   </div>
                   {/* card9 */}
-                  <div className="click-here-sec">
+                  <div className="click-here-sec" data-aos="fade-up">
                     <div className="click-circle-card">
                       <Link to="/services">
                         <button>Clic Here For More Info</button>
@@ -329,7 +329,7 @@ const Home = () => {
                 <h3>Your Path to Success How We Deliver Results</h3>
               </div>
               <div className="how-it-card">
-                <div className="how-it-image-Sec">
+                <div className="how-it-image-Sec" data-aos="fade-right">
                   <img src={ConsultaionImg} alt="Consultation" />
                   <h4>Consultation</h4>
                 </div>
@@ -337,8 +337,9 @@ const Home = () => {
                   src={ArrowImg}
                   alt="arrow image"
                   className="how-it-sm-rotate"
+                  data-aos="flip-left"
                 />
-                <div className="how-it-image-Sec">
+                <div className="how-it-image-Sec" data-aos="fade-up">
                   <img src={DiscussionImg} alt="Discussion & Planning" />
                   <h4>Discussion & Planning</h4>
                 </div>
@@ -346,8 +347,9 @@ const Home = () => {
                   src={ArrowImg}
                   alt="arrow image"
                   className="how-it-sm-rotate"
+                  data-aos="flip-left"
                 />
-                <div className="how-it-image-Sec">
+                <div className="how-it-image-Sec" data-aos="fade-left">
                   <img src={ExecutionImg} alt="Execution" />
                   <h4>Execution</h4>
                 </div>

@@ -44,10 +44,15 @@
         margin: 10px 0px;
         a{
             text-decoration: none;
+            font-size: 20px;
         }
        
     }
 
+}
+
+.quick-lin {
+    padding-left: 40px;
 }
 
 .socila_linktit{
@@ -55,15 +60,35 @@
     color: #00C4FF;
 }
  
+a {
+text-decoration: none;
+
 .footer_icons {
-    background-color: transparent;
-    a {
-    cursor: pointer;
+    background-color: #fff;
+    height: 35px;
+    width: 35px;
+    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+
+    i {
+        color: #233f77;
+        font-size: 20px;
+    }
+}
+}
+.footer_icons:hover {
+    background: #00C4FF !important;
+
+    i {
+        color: #233f77;
     }
 }
 
 .footer_icons:hover {
-    background: #00C4FF;
+    background: #52b105;
 }
 
 .footer_icons:hover a i {
@@ -82,6 +107,25 @@
 }
 
 
+.list-unstyled {
+
+    li {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+    }
+
+}
+ 
 
 /* mobile responsive */
 @media screen and (max-width: 767px) {
@@ -96,6 +140,10 @@
         p {
             font-size: 12px;
         }
+    }
+
+    .quick-lin {
+        padding-left: 0px;
     }
 
 }

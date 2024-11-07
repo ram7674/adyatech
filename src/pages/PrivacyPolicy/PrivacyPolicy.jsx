@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="privacy-cont-card">
+              <div className="privacy-cont-card" data-aos="fade-right">
                 <span>PRIVACY POLICY</span>
                 <h3>Protecting Your Privacy at Adyah Tech</h3>
                 <p>
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="col-lg-6">
-              <div className="privacy-img-card">
+              <div className="privacy-img-card" data-aos="fade-left">
                 <img src={privacyImage} alt="privacy policy image" />
               </div>
             </div>
@@ -39,7 +39,7 @@ const PrivacyPolicy = () => {
               {/* main privacy card */}
               <div className="privacy-main-content">
                 {/* card1 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
                   </div>
                 </div>
                 {/* card2 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card3 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -95,7 +95,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card4 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card5 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -134,7 +134,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card6 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -155,7 +155,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card7 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -172,7 +172,7 @@ const PrivacyPolicy = () => {
                 </div>
 
                 {/* card8 */}
-                <div className="privacy-inner-card">
+                <div className="privacy-inner-card" data-aos="fade-up">
                   {/* left card */}
                   <div className="privacy-left-card">
                     <img src={privacyIcon} alt="icon" />
@@ -193,6 +193,7 @@ const PrivacyPolicy = () => {
                     </p>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>

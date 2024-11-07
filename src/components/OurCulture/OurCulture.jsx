@@ -11,7 +11,7 @@ const OurCulture = () => {
               <span>OUR CULTURE</span>
               <div className="culture-card">
                 {/* mission card1 */}
-                <div className="culture-inner-card">
+                <div className="culture-inner-card" data-aos="fade-up">
                   <h4>Mission</h4>
                   <p>
                     Adyah Tech was founded to provide cutting-edge IT solutions
@@ -19,7 +19,7 @@ const OurCulture = () => {
                   </p>
                 </div>
                 {/* vision card3 */}
-                <div className="culture-inner-card">
+                <div className="culture-inner-card" data-aos="fade-up">
                   <h4>Vision</h4>
                   <p>
                     Adyah Tech was founded to provide cutting-edge IT solutions
@@ -27,7 +27,7 @@ const OurCulture = () => {
                   </p>
                 </div>
                 {/* values card3 */}
-                <div className="culture-inner-card">
+                <div className="culture-inner-card" data-aos="fade-up">
                   <h4>Values</h4>
                   <p>
                     Adyah Tech was founded to provide cutting-edge IT solutions

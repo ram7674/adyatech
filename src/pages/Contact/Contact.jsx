@@ -67,7 +67,7 @@ const Contact = () => {
 
       {/* contact main container */}
       <div className="container-fluid contact-mainBg">
-        <span>Contact Us</span>
+        <span>CONTACT US</span>
         <h1>Let's Build the Future Together!</h1>
         <h4>Looking to elevate your business with innovative IT solutions?</h4>
         <p>
@@ -83,11 +83,11 @@ const Contact = () => {
           <div className="row">
             <div className="col-12">
               <div className="contact-form-mainbg">
-                <div className="contact-imageCard">
+                <div className="contact-imageCard"  data-aos="fade-right">
                   <img src={contactImg} alt="contact Img" />
                 </div>
 
-                <div className="contact-form-container">
+                <div className="contact-form-container"  data-aos="fade-left">
                   <div className="contact-contInp">
                     <span>LET US CONNECT WITH YOU</span>
                     <h3>Have an Idea in Mind?</h3>
@@ -196,7 +196,7 @@ const Contact = () => {
             <div className="col-12">
               <div className="contact-addresCont">
                 {/* left card */}
-                <div className="contact-addresLeft">
+                <div className="contact-addresLeft"  data-aos="fade-up">
                   {/* card1 */}
                   <div className="address-detailsCard">
                     <h4>Let's Talk</h4>
@@ -215,7 +215,7 @@ const Contact = () => {
                         <img src={contactMaillIcon} alt="contact call icon" />
                       </div>
 
-                      <span>h1bcap@adyahtech.com</span>
+                      <span>info@adyahtech.com</span>
                     </div>
                   </div>
                   {/* card3 */}
@@ -233,7 +233,7 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* right card */}
-                <div className="contact-addresRight">
+                <div className="contact-addresRight"  data-aos="fade-up">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579482!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1730295819302!5m2!1sen!2sin"
                     className="contact-formCont"

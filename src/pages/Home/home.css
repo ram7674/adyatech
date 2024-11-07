@@ -53,8 +53,16 @@ h1 {
     border-radius: 8px;
     border: none;
     color: #fff;
-    background: #1C8AC9;
+    background: rgb(21, 47, 101);
     margin-top: 20px;
+  }
+
+}
+
+.hero_content_card {
+
+  button:hover {
+    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
   }
 
 }
@@ -235,7 +243,7 @@ h1 {
 }
 
 .click-circle-card {
-  background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
+  background: #233F77;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -254,6 +262,10 @@ h1 {
     border: none;
   }
 
+}
+
+.click-circle-card:hover {
+  background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
 }
 
 .offer-icon-card {
@@ -302,6 +314,7 @@ h1 {
 
   img {
     height: 100%;
+    width: 100%;
   }
 
 }

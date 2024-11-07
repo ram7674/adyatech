@@ -8,6 +8,8 @@ import careersImg from "/assets/careers-Image.svg";
 import careerStartImg from "/assets/carrers-starting.svg";
 import careerSeekImg from "/assets/carrers-seeking.svg";
 
+import ContactCard from "../../../src/components/ContactCard/ContactCard"
+
 const Careers = () => {
   return (
     <>
@@ -31,13 +33,13 @@ const Careers = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-lg-6">
-              <div className="careers-imageSec">
+              <div className="careers-imageSec"  data-aos="fade-right">
                 <img src={careersImg} alt="careers image" />
               </div>
             </div>
 
             <div className="col-sm-12 col-lg-6">
-              <div className="careers-descSec">
+              <div className="careers-descSec"  data-aos="fade-left">
                 <span>WHAT WE OFFER</span>
                 <h3>Unlock Your Potential with Adyah Tech</h3>
                 <p>
@@ -56,7 +58,7 @@ const Careers = () => {
             <div className="col-12">
               <div className="careers-rowContent">
                 {/* card1 */}
-                <div className="careers-rowCard">
+                <div className="careers-rowCard"  data-aos="fade-up">
                   <div className="careers-desc-card">
                     <div className="careers-card-icon">
                       <img src={careerStartImg} alt="Starting Your Career Journey" />
@@ -77,7 +79,7 @@ const Careers = () => {
                   </p>
                 </div>
                 {/* card2 */}
-                <div className="careers-rowCard">
+                <div className="careers-rowCard"  data-aos="fade-up">
                   <div className="careers-desc-card">
                     <div className="careers-card-icon">
                     <img src={careerSeekImg} alt="Seeking Fresh Challenges" />
@@ -108,6 +110,7 @@ const Careers = () => {
       {/* why choose us component */}
       <WhyChooseUs />
 
+      <ContactCard />
       <Footer />
     </>
   );

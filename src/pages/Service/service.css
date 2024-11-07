@@ -81,6 +81,7 @@
         color: #fff;
         border-radius: 10px;
         border: none;
+        box-shadow: -4px 4px 2px 0px #0000001A;
     }
 
 }

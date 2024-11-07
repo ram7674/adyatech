@@ -44,13 +44,13 @@ const Services = () => {
           <div className="container">
             <div className="row">
               <div className="col-sm-12 col-lg-6">
-                <div className="services-imageSec">
+                <div className="services-imageSec"  data-aos="fade-right">
                   <img src={service.image} alt={service.title} className="services-page-img" />
                 </div>
               </div>
 
               <div className="col-sm-12 col-lg-6">
-                <div className="services-descSec">
+                <div className="services-descSec"  data-aos="fade-left">
                   <span>WHAT WE OFFER</span>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>
@@ -62,7 +62,7 @@ const Services = () => {
               <div className="col-12">
                 <div className="services-rowContent">
                   {service.rowCards.map((card, index) => (
-                    <div className="services-rowCard" key={index}>
+                    <div className="services-rowCard" key={index}  data-aos="fade-up">
                       <div className="services-card-icon">
                         <img src={arrowBrnIcon} alt={card.title} />
                       </div>

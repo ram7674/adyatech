@@ -7,7 +7,7 @@ const ContactCard = () => {
     <>
     <div className="home-contactbg">
         <div className="home-contact-page">
-          <div className="home-contCard">
+          <div className="home-contCard" data-aos="fade-up">
             <div>
               <h4 className="home-contTitle">Have an Idea in Mind?</h4>
               <p className="home-contdesc">We'll Help You Bring It to Life</p>

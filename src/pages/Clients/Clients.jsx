@@ -19,7 +19,7 @@ const Clients = () => {
       <Header />
 
       <div className="container-fluid Client-mainBg-contaner">
-        <span>Our Valued Clients</span>
+        <span>OUR VALUED CLIENTS</span>
         <h1>
           Building Lasting Partnerships Across Industries
         </h1>
@@ -49,7 +49,7 @@ const Clients = () => {
 
               <div className="clients-cards">
                 {/* card1 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                       <img src={healthCare} alt="Health care icon" />
@@ -67,7 +67,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card2 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                     <img src={finance} alt="Finance icon" />
@@ -86,7 +86,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card3 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                     <img src={education} alt="Education icon" />
@@ -104,7 +104,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card4 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                     <img src={logistics} alt="Logistics icon" />
@@ -122,7 +122,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card5 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                     <img src={telecommunication} alt="Telecommunications icon" />
@@ -140,7 +140,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card6 */}
-                <div className="clients-indu-cards">
+                <div className="clients-indu-cards"  data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                       <img src={publicSelector} alt="Public Sector icon" />

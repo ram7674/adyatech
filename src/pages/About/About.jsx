@@ -17,10 +17,10 @@ const About = () => {
       <Header />
 
       <div className="container-fluid contact-mainBg">
-        <span>ABOUT US</span>
-        <h1>Empowering Growth through Technology</h1>
-        <h4>Your Trusted Partner for Comprehensive IT Solutions</h4>
-        <p>
+        <span data-aos="flip-left">ABOUT US</span>
+        <h1 data-aos="flip-right">Empowering Growth through Technology</h1>
+        <h4 data-aos="flip-left">Your Trusted Partner for Comprehensive IT Solutions</h4>
+        <p data-aos="flip-right">
           Adyah Tech empowers businesses through innovative, cost-effective
           solutions across IT staffing, data science, web development, and
           mobile applications your single source for digital success.
@@ -36,7 +36,7 @@ const About = () => {
           <div className="row">
             {/* Text Section */}
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about_mainCard">
+              <div className="about_mainCard" data-aos="fade-right">
                 <span>OUR GOAL</span>
                 <h3>Expertise, Innovation, and Client Focus</h3>
                 <p>
@@ -52,7 +52,7 @@ const About = () => {
 
             {/* Image Section */}
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about-cardImg">
+              <div className="about-cardImg" data-aos="fade-left">
                 <img src={goalImg} alt="About Us image" className="img-fluid" />
               </div>
             </div>
@@ -61,7 +61,7 @@ const About = () => {
           <div className="row">
             {/* Image Section */}
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about-cardImg">
+              <div className="about-cardImg" data-aos="fade-up">
                 <img
                   src={aboutTeamImg}
                   alt="About Us image"
@@ -71,7 +71,7 @@ const About = () => {
             </div>
             {/* Text Section */}
             <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about_mainCard">
+              <div className="about_mainCard" data-aos="fade-up">
                 <span>OUR TEAM</span>
                 <h3>Experienced Professionals, Driven by Passion</h3>
                 <p>
