@@ -1,7 +1,5 @@
 import React from "react";
 import "./clients.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
@@ -15,8 +13,6 @@ import publicSelector from '/assets/clients-public.svg'
 const Clients = () => {
   return (
     <>
-      {/* navbar */}
-      <Header />
 
       <div className="container-fluid Client-mainBg-contaner">
         <span>OUR VALUED CLIENTS</span>
@@ -170,8 +166,6 @@ const Clients = () => {
       {/* home page contact component */}
       <ContactCard />
 
-      {/* footer */}
-      <Footer />
     </>
   );
 };

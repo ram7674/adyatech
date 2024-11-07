@@ -1,7 +1,5 @@
 import React from "react";
 import "./about.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
@@ -13,8 +11,6 @@ import aboutTeamImg from "/assets/about-team-image.svg";
 const About = () => {
   return (
     <>
-      {/* navbar component*/}
-      <Header />
 
       <div className="container-fluid contact-mainBg">
         <span data-aos="flip-left">ABOUT US</span>
@@ -97,8 +93,6 @@ const About = () => {
       {/* home page contact card component */}
       <ContactCard />
 
-      {/* footer component */}
-      <Footer />
     </>
   );
 };

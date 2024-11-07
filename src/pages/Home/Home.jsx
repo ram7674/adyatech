@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
 
@@ -28,9 +27,6 @@ import iconCyberSecurity from "/assets/icon-cyber-security.svg";
 const Home = () => {
   return (
     <>
-      {/* navbar */}
-      <Header />
-
       {/* home page */}
       <div className="container-fluid hero_section">
         <div className="container">
@@ -365,8 +361,6 @@ const Home = () => {
       {/* home page contact card */}
       <ContactCard />
 
-      {/* footer */}
-      <Footer />
     </>
   );
 };

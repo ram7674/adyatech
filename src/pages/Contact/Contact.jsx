@@ -62,8 +62,6 @@ const Contact = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <Header />
 
       {/* contact main container */}
       <div className="container-fluid contact-mainBg">
@@ -249,8 +247,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
     </>
   );
 };

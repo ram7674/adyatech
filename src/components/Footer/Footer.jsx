@@ -131,7 +131,7 @@ const Footer = () => {
           {/* Rights Content */}
           <Row className="pt-3">
             <Col className="footer-copy-sec">
-              <p>Copyright &copy; 2024 Adyahtech. All Rights Reserved</p>
+              <p>Copyright &copy; 2024 <span style={{fontWeight: "600"}}>Adyahtech,</span> All Rights Reserved. Developed by<span style={{fontWeight: "600"}}> SR Brand Builders</span></p>
 
               <ListGroup horizontal>
                 <a href="https://www.facebook.com/profile.php?id=61566987835328" target="_blank">

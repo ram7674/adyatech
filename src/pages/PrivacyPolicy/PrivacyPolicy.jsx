@@ -1,16 +1,11 @@
 import React from "react";
 import "./privacypolicy.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-
 import privacyImage from "/assets/privacy-image.svg";
 import privacyIcon from "/assets/privacy-icon.svg";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      {/* navbar */}
-      <Header />
 
       <div className="container-fluid privacy-mainContainer">
         <div className="container">
@@ -200,8 +195,6 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      {/* footer */}
-      <Footer />
     </>
   );
 };

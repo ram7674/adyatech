@@ -1,8 +1,6 @@
 import React from "react";
 import "./service.css";
 import { Link } from "react-router-dom";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
@@ -18,8 +16,6 @@ import cyberSecurImage from "/assets/cyber-security.svg";
 const Service = () => {
   return (
     <>
-      {/* navbar */}
-      <Header />
 
       <div className="container-fluid contact-mainBg">
         <span>OUR SERVICES</span>
@@ -165,8 +161,6 @@ const Service = () => {
       {/* home page contact card */}
       <ContactCard />
 
-      {/* footer */}
-      <Footer />
     </>
   );
 };

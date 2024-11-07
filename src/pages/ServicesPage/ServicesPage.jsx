@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./servicespage.css";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
@@ -25,8 +23,6 @@ const Services = () => {
 
   return (
     <>
-      {/* Navbar */}
-      <Header />
 
       {/* Services Main Page */}
       <div className="container-fluid contact-mainBg">
@@ -86,8 +82,6 @@ const Services = () => {
       {/* home page contact component */}
       <ContactCard />
 
-      {/* Footer */}
-      <Footer />
     </>
   );
 };

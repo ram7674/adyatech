@@ -1,7 +1,5 @@
 import React from "react";
 import "./careers.css";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
 import careersImg from "/assets/careers-Image.svg";
@@ -13,7 +11,6 @@ import ContactCard from "../../../src/components/ContactCard/ContactCard"
 const Careers = () => {
   return (
     <>
-      <Header />
 
       <div className="container-fluid contact-mainBg">
         <span>CAREERS</span>
@@ -33,7 +30,7 @@ const Careers = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-lg-6">
-              <div className="careers-imageSec"  data-aos="fade-right">
+              <div className="careers-imageSec" data-aos="fade-right">
                 <img src={careersImg} alt="careers image" />
               </div>
             </div>
@@ -111,7 +108,7 @@ const Careers = () => {
       <WhyChooseUs />
 
       <ContactCard />
-      <Footer />
+      
     </>
   );
 };
