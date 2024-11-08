@@ -53,7 +53,7 @@ h1 {
     border-radius: 8px;
     border: none;
     color: #fff;
-    background: rgb(21, 47, 101);
+    background: #1C8AC9;
     margin-top: 20px;
   }
 
@@ -118,18 +118,10 @@ h1 {
     margin: 20px 0px;
   }
 
-  button {
-    width: 148px;
-    height: 38px;
-    padding: 0px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    border: none;
-    color: #fff;
-    background: #1C8AC9;
-    margin-top: 20px;
-  }
+}
 
+/* .why-secParent:hover button{
+  background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
 }
 
 .why-secParent button::after {
@@ -138,6 +130,7 @@ h1 {
   color: #fff;
   font-weight: bold;
 }
+ */
 
 .why-secChild {
   background-color: #1D83C126;
@@ -379,6 +372,11 @@ h1 {
 
 }
 
+.hide_lg_dev {
+  img {
+    display: none;
+  }
+}
 
 
 
@@ -395,6 +393,19 @@ h1 {
       font-size: 17px;
     }
 
+  }
+
+  .hide_lg_dev {
+    img {
+      display: block;
+    }
+  }
+  
+  .hide_sm_dev {
+    background-color: #87BC47;
+    img {
+      display: none;
+    }
   }
 
   .hero_gif_card {
@@ -503,6 +514,18 @@ h1 {
 
 /* tablet responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .hide_lg_dev {
+    img {
+      display: block;
+    }
+  }
+  
+  .hide_sm_dev {
+    background-color: #234078;
+    display: none !important;
+  }
+
 
   .hero_content_card {
     align-items: center;

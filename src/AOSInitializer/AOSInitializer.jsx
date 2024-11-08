@@ -8,7 +8,7 @@ const AOSInitializer = () => {
       duration: 900,  // Adjust your settings here
       offset: 200,
       easing: 'ease-in-out',
-      //once: true,      // Whether animation should happen only once
+      once: true,      // Whether animation should happen only once
     });
   }, []);
 

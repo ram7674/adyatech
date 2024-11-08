@@ -442,4 +442,62 @@ textarea::placeholder {
 }
 
 /* tablet responsive */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .contact-form-mainbg {
+    flex-direction: column;
+  }
+
+  .contact-imageCard {
+    width: 100%;
+    margin-bottom: 40px;
+
+    img {
+      width: 66%;
+    }
+     
+  }
+
+  .contact-form-container {
+    width: 95%;
+  }
+
+  .contact-addresCont {
+    flex-direction: column;
+  }
+
+  .contact-addresLeft {
+    width: 85%;
+    margin-bottom: 37px;
+  }
+
+  .address-detailsCard {
+    h4 {
+        font-size: 23px;
+        margin-bottom: 16px;
+    }
+  }
+
+  .address-iconCont {
+    width: 9%;
+  }
+
+  .address-iconsCard {
+    span {
+        font-size: 19px;
+        width: 81%;
+    }
+  }
+
+  .address-iconCont {
+    img {
+        height: 31px;
+    }
+  }
+
+  .contact-addresRight {
+    width: 94%;
+    height: 439px;
+  }
+
+}

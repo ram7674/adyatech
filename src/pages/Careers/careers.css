@@ -179,3 +179,44 @@
     }
 
 }
+
+
+/* tablet responsive */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .careers-imageSec {
+        height: 72%;
+        width: 100%;
+
+        img {
+            height: 81%;
+        }
+
+    }
+
+    .careers-descSec {
+        justify-content: start;
+
+        h3 {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+        }
+    }
+
+    .careers-rowContent {
+        padding: 0px;
+    }
+
+    .careers-rowCard {
+        width: 100%;
+    }
+
+    .careers-desc-card {
+        h5 {
+            font-size: 19px;
+            height: 26px;
+        }
+    }
+
+}

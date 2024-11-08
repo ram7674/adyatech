@@ -17,7 +17,7 @@ const Service = () => {
   return (
     <>
 
-      <div className="container-fluid contact-mainBg">
+      <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>OUR SERVICES</span>
         <h1>Empowering Digital Transformation</h1>
         <h4>Driving Success with Tailored Technology Solutions</h4>

@@ -246,5 +246,37 @@
 
 /* tablet responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
+
+    .Client-mainBg-contaner {
+        h1 {
+            font-size: 41px;
+            line-height: 48.1px;
+            width: 100%;
+            height: 98px;
+            margin-top: 12px;
+        }
+    }
+
+    .iconCard {
+        img {
+            height: 81%;
+        }
+    }
+
+    .clients-innerCard {
+        padding: 12px;
+
+        p {
+            font-size: 15px;
+            line-height: 22.4px;
+        }
+    }
+
+    .clients-iconCard {
+        h5 {
+            font-size: 20px;
+            height: 22px;
+            margin: 10px 0px 0px;
+        }
+    }
 }

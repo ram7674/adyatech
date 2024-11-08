@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 
@@ -33,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_q1oznbs",
-        "template_hwumd7k",
+        "service_qmubk99",
+        "template_k5ulwup",
         form.current,
-        "7hqPKLGR6oPG4vOm6"
+        "aVSqEknYRxO-b_XaL"
       )
       .then(
         () => {
@@ -64,7 +62,7 @@ const Contact = () => {
     <>
 
       {/* contact main container */}
-      <div className="container-fluid contact-mainBg">
+      <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>CONTACT US</span>
         <h1>Let's Build the Future Together!</h1>
         <h4>Looking to elevate your business with innovative IT solutions?</h4>
@@ -81,11 +79,11 @@ const Contact = () => {
           <div className="row">
             <div className="col-12">
               <div className="contact-form-mainbg">
-                <div className="contact-imageCard"  data-aos="fade-right">
+                <div className="contact-imageCard"  data-aos="zoom-in">
                   <img src={contactImg} alt="contact Img" />
                 </div>
 
-                <div className="contact-form-container"  data-aos="fade-left">
+                <div className="contact-form-container"  data-aos="fade-up">
                   <div className="contact-contInp">
                     <span>LET US CONNECT WITH YOU</span>
                     <h3>Have an Idea in Mind?</h3>

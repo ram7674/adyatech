@@ -14,7 +14,7 @@ const Clients = () => {
   return (
     <>
 
-      <div className="container-fluid Client-mainBg-contaner">
+      <div className="container-fluid Client-mainBg-contaner" data-aos="fade-up">
         <span>OUR VALUED CLIENTS</span>
         <h1>
           Building Lasting Partnerships Across Industries

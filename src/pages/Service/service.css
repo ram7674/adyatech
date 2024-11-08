@@ -129,5 +129,24 @@
 
 /* medium device responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    
+
+    .services-itemsCard {
+        flex-direction: column;
+    }
+
+    .services-descCard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h4 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
 }

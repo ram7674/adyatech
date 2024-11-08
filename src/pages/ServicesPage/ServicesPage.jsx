@@ -25,7 +25,7 @@ const Services = () => {
     <>
 
       {/* Services Main Page */}
-      <div className="container-fluid contact-mainBg">
+      <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>OUR SERVICES</span>
         <h1>Empowering Digital Transformation</h1>
         <h4>Driving Success with Tailored Technology Solutions</h4>
@@ -39,14 +39,14 @@ const Services = () => {
         <div className="container-fluid services-mainBg">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-lg-6">
-                <div className="services-imageSec"  data-aos="fade-right">
+              <div className="col-sm-12 col-md-5 col-lg-6">
+                <div className="services-imageSec"  data-aos="zoom-in">
                   <img src={service.image} alt={service.title} className="services-page-img" />
                 </div>
               </div>
 
-              <div className="col-sm-12 col-lg-6">
-                <div className="services-descSec"  data-aos="fade-left">
+              <div className="col-sm-12 col-md-7 col-lg-6">
+                <div className="services-descSec"  data-aos="fade-up">
                   <span>WHAT WE OFFER</span>
                   <h3>{service.title}</h3>
                   <p>{service.description}</p>

@@ -151,4 +151,22 @@ text-decoration: none;
 /* tablet responsive */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
+    .quick-lin {
+        padding-left: 0px;
+    }
+
+    .footer-copy-sec {
+        flex-direction: column;
+
+        p {
+            font-size: 12px;
+            order: 2;
+            margin: 0px;
+        }
+    }
+
+    .footer-or-card {
+        order: 1;
+        margin-bottom: 15px;
+    }
 }

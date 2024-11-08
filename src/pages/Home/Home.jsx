@@ -42,7 +42,7 @@ const Home = () => {
               <Link to="/contact"><button>Contact Now</button></Link>
             </div>
             {/*  */}
-            <div className="col-md-12 col-lg-6 hero_gif_card" data-aos="fade-up">
+            <div className="col-md-12 col-lg-6 hero_gif_card" data-aos="zoom-in">
               <img src={homePageImg} alt="IT Consulting GIF" />
             </div>
           </div>
@@ -58,8 +58,11 @@ const Home = () => {
           <div className="row">
             {/* left card */}
             <div className="col-lg-6">
-              <div className="why-secParent" data-aos="fade-right">
+              <div className="why-secParent" data-aos="fade-up">
                 <span>WHAT WE DO</span>
+                {/* only sm-visible */}
+               
+
                 <h4>Elevate Your Digital Impact with Customized Solutions</h4>
                 <p>
                   At Adyah Tech, we provide innovative IT staffing, consulting,
@@ -67,6 +70,15 @@ const Home = () => {
                   rapidly evolving digital world. Our team of experts delivers
                   results that drive efficiency, growth, and success.
                 </p>
+                <div className="col-lg-6">
+                  <div className="why-choose-left hide_lg_dev" data-aos="zoom-in">
+                    <img
+                      src={whatWeDoImage}
+                      alt="experience"
+                      className="why-choose-img"
+                    />
+                  </div>
+                </div>
                 <div className="why-secChild">
                   <h5>Innovative Strategies</h5>
                   <h5>Industry Expertise</h5>
@@ -75,20 +87,20 @@ const Home = () => {
                   <h5>Innovative Solutions</h5>
                   <h5>Enhanced User Experience</h5>
                 </div>
-                <button>Know More</button>
               </div>
             </div>
 
             {/* right card */}
             <div className="col-lg-6">
-              <div className="why-choose-left" data-aos="fade-left">
+              <div className="why-choose-left hide_sm_dev" data-aos="zoom-in">
                 <img
                   src={whatWeDoImage}
-                  alt=" experience"
+                  alt="experience"
                   className="why-choose-img"
                 />
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -325,7 +337,7 @@ const Home = () => {
                 <h3>Your Path to Success How We Deliver Results</h3>
               </div>
               <div className="how-it-card">
-                <div className="how-it-image-Sec" data-aos="fade-right">
+                <div className="how-it-image-Sec" data-aos="zoom-in">
                   <img src={ConsultaionImg} alt="Consultation" />
                   <h4>Consultation</h4>
                 </div>
@@ -335,7 +347,7 @@ const Home = () => {
                   className="how-it-sm-rotate"
                   data-aos="flip-left"
                 />
-                <div className="how-it-image-Sec" data-aos="fade-up">
+                <div className="how-it-image-Sec" data-aos="zoom-in">
                   <img src={DiscussionImg} alt="Discussion & Planning" />
                   <h4>Discussion & Planning</h4>
                 </div>
@@ -345,7 +357,7 @@ const Home = () => {
                   className="how-it-sm-rotate"
                   data-aos="flip-left"
                 />
-                <div className="how-it-image-Sec" data-aos="fade-left">
+                <div className="how-it-image-Sec" data-aos="zoom-in">
                   <img src={ExecutionImg} alt="Execution" />
                   <h4>Execution</h4>
                 </div>

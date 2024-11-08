@@ -12,7 +12,7 @@ const Careers = () => {
   return (
     <>
 
-      <div className="container-fluid contact-mainBg">
+      <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>CAREERS</span>
         <h1>Shape Your Future with Adyah Tech</h1>
         <h4>Join a Team Committed to Innovation, Growth, and Impact</h4>
@@ -29,13 +29,13 @@ const Careers = () => {
       <div className="container-fluid careers-mainBg">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 col-lg-6">
-              <div className="careers-imageSec" data-aos="fade-right">
+            <div className="col-sm-12 col-md-5 col-lg-6">
+              <div className="careers-imageSec" data-aos="zoom-in">
                 <img src={careersImg} alt="careers image" />
               </div>
             </div>
 
-            <div className="col-sm-12 col-lg-6">
+            <div className="col-sm-12 col-md-7 col-lg-6">
               <div className="careers-descSec"  data-aos="fade-left">
                 <span>WHAT WE OFFER</span>
                 <h3>Unlock Your Potential with Adyah Tech</h3>

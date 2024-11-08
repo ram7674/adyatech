@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
           <div className="row">
             {/* left card */}
             <div className="col-lg-6">
-              <div className="why-choose-parent" data-aos="fade-right">
+              <div className="why-choose-parent" data-aos="fade-up">
                 <span>WHY CHOOSE US</span>
                 <h4 className="why-choose-mainTit">
                   Results-Driven Digital Solutions Tailored for You
@@ -28,11 +28,24 @@ const WhyChooseUs = () => {
                   measurable growth, enhancing brand presence, and ensuring
                   long-term success for your business.
                 </p>
+
+                <div className="col-lg-6">
+                  <div className="why-choose-left hide_lg_dev" data-aos="zoom-in">
+                    <img
+                      src={whyChooseImg}
+                      alt=" experience"
+                      className="why-choose-img"
+                    />
+                  </div>
+                </div>
                 <div className="why-choose-child" data-aos="fade-up">
                   {/* child1 */}
                   <div className="why-choose-card">
                     <div className="why-iconCard">
-                      <img src={innoStrategy} alt="Innovative Strategies icon" />
+                      <img
+                        src={innoStrategy}
+                        alt="Innovative Strategies icon"
+                      />
                     </div>
                     <h4>Innovative Strategies</h4>
                     <p>
@@ -43,7 +56,10 @@ const WhyChooseUs = () => {
                   {/* child2 */}
                   <div className="why-choose-card">
                     <div className="why-iconCard">
-                      <img src={provenSuccess} alt="Innovative Strategies icon" />
+                      <img
+                        src={provenSuccess}
+                        alt="Innovative Strategies icon"
+                      />
                     </div>
                     <h4>Proven Success</h4>
                     <p>
@@ -79,7 +95,7 @@ const WhyChooseUs = () => {
 
             {/* right card */}
             <div className="col-lg-6">
-              <div className="why-choose-left" data-aos="fade-left">
+              <div className="why-choose-left hide_sm_dev" data-aos="zoom-in">
                 <img
                   src={whyChooseImg}
                   alt=" experience"

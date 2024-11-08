@@ -133,7 +133,7 @@ const Footer = () => {
             <Col className="footer-copy-sec">
               <p>Copyright &copy; 2024 <span style={{fontWeight: "600"}}>Adyahtech,</span> All Rights Reserved. Developed by<span style={{fontWeight: "600"}}> SR Brand Builders</span></p>
 
-              <ListGroup horizontal>
+              <ListGroup horizontal className="footer-or-card">
                 <a href="https://www.facebook.com/profile.php?id=61566987835328" target="_blank">
                   <div className="footer_icons">
                   <i className="fab fa-facebook-f"></i>

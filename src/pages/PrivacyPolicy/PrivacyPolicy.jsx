@@ -10,8 +10,8 @@ const PrivacyPolicy = () => {
       <div className="container-fluid privacy-mainContainer">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <div className="privacy-cont-card" data-aos="fade-right">
+            <div className="col-lg-6 col-md-7">
+              <div className="privacy-cont-card" data-aos="fade-up">
                 <span>PRIVACY POLICY</span>
                 <h3>Protecting Your Privacy at Adyah Tech</h3>
                 <p>
@@ -24,8 +24,8 @@ const PrivacyPolicy = () => {
               </div>
             </div>
 
-            <div className="col-lg-6">
-              <div className="privacy-img-card" data-aos="fade-left">
+            <div className="col-lg-6 col-md-5">
+              <div className="privacy-img-card" data-aos="zoom-in">
                 <img src={privacyImage} alt="privacy policy image" />
               </div>
             </div>

@@ -150,3 +150,41 @@
     }
 
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .privacy-cont-card {
+        h3 {
+            width: 100%;
+        }
+    }
+
+    .privacy-img-card {
+        height: 100%;
+
+        img {
+            height: 245px;
+        }
+
+    }
+
+    .privacy-main-content {
+        margin-top: 50px;
+    }
+
+    .privacy-inner-card {
+        margin-bottom: 12px;
+    }
+
+    .privacy-righi-card {
+        h4 {
+            font-size: 20px;
+            line-height: 15.48px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}

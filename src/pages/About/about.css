@@ -91,9 +91,45 @@
         img {
 
         }
-    }    
+    }
+
+    .order-smDv {
+        order: 2;
+    }
+
+    .order-smlg{
+        order: 1;
+    }
 
 }
 
 /* tablet responsive */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .about-mainbg {
+        padding-bottom: 50px;
+    }
+
+    .about_mainCard {
+        margin-top: 50px;
+
+        h3 {
+            font-size: 29px;
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .about-cardImg {
+        margin-top: 50px;
+        height: 100%;
+
+        img {
+            height: 232px;
+        }
+    }
+
+}

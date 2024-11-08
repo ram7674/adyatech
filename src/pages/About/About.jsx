@@ -12,11 +12,11 @@ const About = () => {
   return (
     <>
 
-      <div className="container-fluid contact-mainBg">
-        <span data-aos="flip-left">ABOUT US</span>
-        <h1 data-aos="flip-right">Empowering Growth through Technology</h1>
-        <h4 data-aos="flip-left">Your Trusted Partner for Comprehensive IT Solutions</h4>
-        <p data-aos="flip-right">
+      <div className="container-fluid contact-mainBg" data-aos="fade-up">
+        <span>ABOUT US</span>
+        <h1>Empowering Growth through Technology</h1>
+        <h4>Your Trusted Partner for Comprehensive IT Solutions</h4>
+        <p>
           Adyah Tech empowers businesses through innovative, cost-effective
           solutions across IT staffing, data science, web development, and
           mobile applications your single source for digital success.
@@ -31,7 +31,7 @@ const About = () => {
         <div className="container">
           <div className="row">
             {/* Text Section */}
-            <div className="col-lg-6 col-md-12 col-sm-12">
+            <div className="col-lg-6 col-md-7 col-sm-12">
               <div className="about_mainCard" data-aos="fade-right">
                 <span>OUR GOAL</span>
                 <h3>Expertise, Innovation, and Client Focus</h3>
@@ -47,8 +47,8 @@ const About = () => {
             </div>
 
             {/* Image Section */}
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about-cardImg" data-aos="fade-left">
+            <div className="col-lg-6 col-md-5 col-sm-12">
+              <div className="about-cardImg" data-aos="zoom-in">
                 <img src={goalImg} alt="About Us image" className="img-fluid" />
               </div>
             </div>
@@ -56,8 +56,8 @@ const About = () => {
 
           <div className="row">
             {/* Image Section */}
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="about-cardImg" data-aos="fade-up">
+            <div className="col-lg-6 col-md-5 col-sm-12 order-smDv">
+              <div className="about-cardImg" data-aos="zoom-in">
                 <img
                   src={aboutTeamImg}
                   alt="About Us image"
@@ -66,7 +66,7 @@ const About = () => {
               </div>
             </div>
             {/* Text Section */}
-            <div className="col-lg-6 col-md-12 col-sm-12">
+            <div className="col-lg-6 col-md-7 col-sm-12 order-smlg">
               <div className="about_mainCard" data-aos="fade-up">
                 <span>OUR TEAM</span>
                 <h3>Experienced Professionals, Driven by Passion</h3>
