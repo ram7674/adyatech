@@ -32,17 +32,25 @@ const Home = () => {
         <div className="container">
           <div className="row">
             {/*  */}
-            <div className="col-md-12 col-lg-6 hero_content_card" data-aos="fade-up">
+            <div
+              className="col-md-12 col-lg-6 hero_content_card"
+              data-aos="fade-up"
+            >
               <span>WELCOME TO ADYAH TECH</span>
               <h1>Innovative IT Solutions for Your Business Success</h1>
               <p>
                 Empowering your business with cutting-edge IT staffing, data
                 science, and consulting services
               </p>
-              <Link to="/contact"><button>Contact Now</button></Link>
+              <Link to="/contact">
+                <button>Contact Now</button>
+              </Link>
             </div>
             {/*  */}
-            <div className="col-md-12 col-lg-6 hero_gif_card" data-aos="zoom-in">
+            <div
+              className="col-md-12 col-lg-6 hero_gif_card"
+              data-aos="zoom-in"
+            >
               <img src={homePageImg} alt="IT Consulting GIF" />
             </div>
           </div>
@@ -61,7 +69,6 @@ const Home = () => {
               <div className="why-secParent" data-aos="fade-up">
                 <span>WHAT WE DO</span>
                 {/* only sm-visible */}
-               
 
                 <h4>Elevate Your Digital Impact with Customized Solutions</h4>
                 <p>
@@ -71,7 +78,10 @@ const Home = () => {
                   results that drive efficiency, growth, and success.
                 </p>
                 <div className="col-lg-6">
-                  <div className="why-choose-left hide_lg_dev" data-aos="zoom-in">
+                  <div
+                    className="why-choose-left hide_lg_dev"
+                    data-aos="zoom-in"
+                  >
                     <img
                       src={whatWeDoImage}
                       alt="experience"
@@ -100,7 +110,6 @@ const Home = () => {
                 />
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -372,7 +381,6 @@ const Home = () => {
 
       {/* home page contact card */}
       <ContactCard />
-
     </>
   );
 };

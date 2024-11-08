@@ -94,7 +94,7 @@ const Contact = () => {
                     onSubmit={sendEmail}
                     className="form-mainCont"
                   >
-                    {/* Name */}
+                    {/* Name  inpuit*/}
                     <div className="form-group">
                       <label htmlFor="name">Your Name</label>
                       <input
