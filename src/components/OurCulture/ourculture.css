@@ -44,24 +44,35 @@
     background: #233F77;
   
     h4 {
-  
+      margin-bottom: -40px;
     }
   
     p {
       text-align: center;
       font-size: 12px;
-      display: none;
-      transition: all .2s ease-in-out;
+      opacity: 0;
+      transition: 0.6s;
     }
   
   }
   
   .culture-inner-card:hover {
     background: linear-gradient(180deg, #23417A 0%, #1D89C7 50%, #8ABE44 100%);
+  } 
+  .culture-inner-card:hover h4 {
+    margin-bottom: 0px !important;
+  }
+
+  .culture-inner-card:hover p {
+    opacity: 1;
+  }
+
+  .culture-inner-card > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
   }
   
-  .culture-inner-card:hover p {
-    display: block;
-    transition: all .6s ease-in-out;
+  .culture-inner-card:hover > *{
+    transform: translateY(0px);
   }
   

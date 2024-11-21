@@ -154,7 +154,7 @@ const Footer = () => {
                   <i className="fab fa-whatsapp"></i>
                   </div>
                 </a>
-                <a href="#">
+                <a>
                   <div className="footer_icons">
                   <i className="fab fa-youtube"></i>
                   </div>

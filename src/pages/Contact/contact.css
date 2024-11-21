@@ -195,7 +195,7 @@ textarea::placeholder {
 }
 
 .form-sub-btn {
-  width: 118.5px;
+  width: 147.5px;
   height: 32px;
   padding: 0px 10p;
   gap: 10px;
@@ -205,6 +205,22 @@ textarea::placeholder {
   border: none;
   margin-top: 30px;
 }
+
+.form-sub-btn{
+  background-size: 200%; /* Prepares for the gradient transition */
+  
+  background-position: right; /* Position gradient off the view */
+  color: white; /* Optional: Adjust text color */
+  transition: background-position 1.2s ease, background-color 1.2s ease; /* Smooth animation */
+}
+
+.form-sub-btn:hover {
+  /* background-image: linear-gradient(90deg, #8CBE41 0%, #1C8AC9 50%, #233F77 100%); */
+  background-image: linear-gradient(90deg, #233F77 4%, #1C8AC9 29%, #8CBE41 50%);
+  background-position: left; /* Move gradient into view */
+ /*  background-color: transparent; Ensures solid color fades into gradient */
+}
+
 
 .form-group label {
   font-size: 16px;
@@ -263,9 +279,10 @@ textarea::placeholder {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 80%;
 
   span {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     color: #233F77;
@@ -275,7 +292,7 @@ textarea::placeholder {
 }
 
 .address-iconCont {
-  width: 20%;
+  width: 8%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -426,7 +443,7 @@ textarea::placeholder {
   }
 
   .address-iconCont {
-
+    width: 30%;
     img {
         height: 32px;
         margin-right: 12px;

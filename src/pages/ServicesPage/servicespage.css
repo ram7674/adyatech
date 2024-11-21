@@ -149,6 +149,10 @@
     .services-desc-card {
         align-items: center;
 
+        h5 {
+            font-size: 14px;
+        }
+
         p {
             text-align: center;
         }

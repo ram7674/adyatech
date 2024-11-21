@@ -59,13 +59,25 @@ h1 {
 
 }
 
-.hero_content_card {
-
-  button:hover {
-    background: linear-gradient(90deg, #233F77 0%, #1C8AC9 50%, #8CBE41 100%);
-  }
-
+.hero_content_card button {
+  background: #1C8AC9; /* Initial solid background color */
+  background-size: 200%; /* Prepares for the gradient transition */
+  
+  background-position: right; /* Position gradient off the view */
+  color: white; /* Optional: Adjust text color */
+  border: none; /* Optional: Remove default border */
+  font-size: 16px; /* Optional: Font size for better visibility */
+  transition: background-position 1.2s ease, background-color 1.2s ease; /* Smooth animation */
 }
+
+.hero_content_card button:hover {
+  /* background-image: linear-gradient(90deg, #8CBE41 0%, #1C8AC9 50%, #233F77 100%); */
+  background-image: linear-gradient(90deg, #233F77 4%, #1C8AC9 29%, #8CBE41 50%);
+  background-position: left; /* Move gradient into view */
+ /*  background-color: transparent; Ensures solid color fades into gradient */
+}
+
+
 
 
 .hero_gif_card {

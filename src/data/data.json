@@ -120,16 +120,16 @@
       "image": "/assets/health-care-it.svg",
       "rowCards": [
         {
-          "title": "Electronic Health Records Integration",
-          "description": "Simplify patient data management across systems."
+          "title": "Epic's Integrated EHRs",
+          "description": "Epic's platform offers real-time patient data across clinical and operational workflows to improve decision-making and care."
         },
         {
           "title": "Patient Data Security",
           "description": "Protect sensitive data with robust security protocols."
         },
         {
-          "title": "Regulatory Compliance",
-          "description": " Meet healthcare standards with tailored compliance solutions."
+          "title": "Epic's Seamless Interoperability",
+          "description": "Epic ensures secure data sharing between providers, ensuring continuity and collaboration in patient care."
         }
       ]
     },
