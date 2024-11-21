@@ -149,7 +149,7 @@ const Footer = () => {
                     <i className="fab fa-linkedin-in"></i>
                   </div>
                 </a>
-                <a href="https://www.instagram.com/adyahtech/" target="_blank">
+                <a href="https://wa.me/+1 (470) - 508 - 5128" target="_blank">
                   <div className="footer_icons">
                   <i className="fab fa-whatsapp"></i>
                   </div>

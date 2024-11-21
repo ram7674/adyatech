@@ -60,7 +60,6 @@ const Contact = () => {
 
   return (
     <>
-
       {/* contact main container */}
       <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>CONTACT US</span>
@@ -79,11 +78,11 @@ const Contact = () => {
           <div className="row">
             <div className="col-12">
               <div className="contact-form-mainbg">
-                <div className="contact-imageCard"  data-aos="zoom-in">
+                <div className="contact-imageCard" data-aos="zoom-in">
                   <img src={contactImg} alt="contact Img" />
                 </div>
 
-                <div className="contact-form-container"  data-aos="fade-up">
+                <div className="contact-form-container" data-aos="fade-up">
                   <div className="contact-contInp">
                     <span>LET US CONNECT WITH YOU</span>
                     <h3>Have an Idea in Mind?</h3>
@@ -192,7 +191,7 @@ const Contact = () => {
             <div className="col-12">
               <div className="contact-addresCont">
                 {/* left card */}
-                <div className="contact-addresLeft"  data-aos="fade-up">
+                <div className="contact-addresLeft" data-aos="fade-up">
                   {/* card1 */}
                   <div className="address-detailsCard">
                     <h4>Let's Talk</h4>
@@ -229,9 +228,9 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* right card */}
-                <div className="contact-addresRight"  data-aos="fade-up">
+                <div className="contact-addresRight" data-aos="fade-up">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0450819579482!2d78.47208957500948!3d17.361563583521164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1730295819302!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.1684487693356!2d-84.29057902441852!3d34.0395498731616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f575411b3309b3%3A0x793d535632df88c9!2s4555%20Mansell%20Rd%20%23%20300%2C%20Alpharetta%2C%20GA%2030022%2C%20USA!5e0!3m2!1sen!2sin!4v1731304787985!5m2!1sen!2sin"
                     className="contact-formCont"
                     style={{ border: 0 }}
                     allowFullScreen=""
@@ -244,7 +243,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

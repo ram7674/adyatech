@@ -92,7 +92,7 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/careers" onClick={closeNavbar}>
               Careers
             </Nav.Link>
-            <Nav.Link href="#" onClick={closeNavbar}>
+            <Nav.Link onClick={closeNavbar}>
               Blog
             </Nav.Link>
           </Nav>
