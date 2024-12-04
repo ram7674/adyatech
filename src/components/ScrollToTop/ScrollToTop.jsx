@@ -1,21 +1,17 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    // Scroll to top
-    window.scrollTo(0, 0);
-
-    // Reinitialize AOS after page load to ensure animations work correctly
-    setTimeout(() => {
-      if (typeof window.AOS !== 'undefined') {
-        window.AOS.refresh();  // Refresh AOS animations after navigation
-      }
-    }, 100); // A small delay ensures the page content is loaded before initializing AOS
-
-  }, [pathname]);
+    // Scroll to top when the route changes
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", // Use "smooth" for a smoother scroll
+    });
+  }, [location.pathname]);
 
   return null;
 };

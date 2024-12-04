@@ -1,5 +1,5 @@
 import React from "react";
-import './ourculture.css'
+import "./ourculture.css";
 
 const OurCulture = () => {
   return (
@@ -15,23 +15,23 @@ const OurCulture = () => {
                   <h4>Mission</h4>
                   <p>
                     Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
+                    that simplify complexity and deliver results.
                   </p>
                 </div>
                 {/* vision card3 */}
                 <div className="culture-inner-card" data-aos="zoom-in">
                   <h4>Vision</h4>
                   <p>
-                    Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
+                    Transforming IT to empower businesses to excel in a dynamic
+                    digital landscape.
                   </p>
                 </div>
                 {/* values card3 */}
                 <div className="culture-inner-card" data-aos="zoom-in">
                   <h4>Values</h4>
                   <p>
-                    Adyah Tech was founded to provide cutting-edge IT solutions
-                    that simplify complexity and deliver results
+                    Integrity, client-first, quality in everything we do, and
+                    employee development.
                   </p>
                 </div>
               </div>

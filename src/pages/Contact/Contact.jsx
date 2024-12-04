@@ -38,9 +38,6 @@ const Contact = () => {
       )
       .then(
         () => {
-          console.log("SUCCESS!");
-          window.alert("Email sent successfully!"); // Alert message on success;
-
           // Reset form after successful submission
           setFormData({
             name: "",
@@ -50,6 +47,11 @@ const Contact = () => {
             service: "",
             // gender: "", // Uncomment if you need this
           });
+
+          //console.log("SUCCESS!");
+          window.alert("Email sent successfully!"); // Alert message on success;
+
+          
         },
         (error) => {
           console.error("FAILED...", error.text);
@@ -144,17 +146,19 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Select a service you want ?</option>
-                        <option value="IT Staffing & Consulting">
+                        <option value="" className="select_bg">Select a service you want ?</option>
+                        <option value="IT Staffing & Consulting" className="select_bg">
                           IT Staffing & Consulting
                         </option>
-                        <option value="Data Science">Data Science</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="Mobile Applications">
+                        <option value="Data Science" className="select_bg">Data Science</option>
+                        <option value="Web Development" className="select_bg">Web Development</option>
+                        <option value="Mobile Applications" className="select_bg">
                           Mobile Applications
                         </option>
-                        <option value="Cloud Services">Cloud Services</option>
-                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Cloud Services" className="select_bg">Cloud Services</option>
+                        <option value="Cyber Security" className="select_bg">Cyber Security</option>
+                        <option value="SalesForce" className="select_bg">SalesForce</option>
+                        <option value="Health CareIT" className="select_bg">Health CareIT</option>
                       </select>
                     </div>
 

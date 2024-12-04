@@ -146,7 +146,11 @@
   border-radius: 10px;
   background: #233F774D;
   color: #ced9e8;
+}
 
+.select_bg {
+  background-color: #1C8AC9;
+  color: #fff;
 }
 
 input:focus {
