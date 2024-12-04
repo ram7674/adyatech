@@ -1,24 +1,42 @@
 import React from "react";
 import "./clients.css";
+import { Helmet } from "react-helmet";
+
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
-import healthCare from '/assets/clients-healthCare.svg'
-import finance from '/assets/clients-finance.svg'
-import education from '/assets/clients-education.svg'
-import logistics from '/assets/clients-logisticks.svg'
-import telecommunication from '/assets/clients-telecom.svg'
-import publicSelector from '/assets/clients-public.svg'
+import healthCare from "/assets/clients-healthCare.svg";
+import finance from "/assets/clients-finance.svg";
+import education from "/assets/clients-education.svg";
+import logistics from "/assets/clients-logisticks.svg";
+import telecommunication from "/assets/clients-telecom.svg";
+import publicSelector from "/assets/clients-public.svg";
+
 
 const Clients = () => {
   return (
     <>
+      <Helmet>
+        <title>Clients | AdyahTech</title>
+        <meta
+          name="description"
+          content="Adyah Tech serves clients across various industries, providing deep insights, innovation, and proven IT expertise to drive business outcomes."
+        />
+        <meta
+          name="keywords"
+          content="IT solutions, federal government IT, financial IT solutions, healthcare IT, telecom IT systems, industry-specific IT solutions"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
 
-      <div className="container-fluid Client-mainBg-contaner" data-aos="fade-up">
+      <div
+        className="container-fluid Client-mainBg-contaner"
+        data-aos="fade-up"
+      >
         <span>OUR VALUED CLIENTS</span>
-        <h1>
-          Building Lasting Partnerships Across Industries
-        </h1>
+        <h1>Building Lasting Partnerships Across Industries</h1>
         <h4>
           Delivering Tailored IT Solutions to Drive Innovation Across Industries
         </h4>
@@ -45,7 +63,7 @@ const Clients = () => {
 
               <div className="clients-cards">
                 {/* card1 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                       <img src={healthCare} alt="Health care icon" />
@@ -63,10 +81,10 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card2 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
-                    <img src={finance} alt="Finance icon" />
+                      <img src={finance} alt="Finance icon" />
                     </div>
                     <h5>Finance & E-commerce</h5>
                   </div>
@@ -82,10 +100,10 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card3 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
-                    <img src={education} alt="Education icon" />
+                      <img src={education} alt="Education icon" />
                     </div>
                     <h5>Education</h5>
                   </div>
@@ -100,10 +118,10 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card4 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
-                    <img src={logistics} alt="Logistics icon" />
+                      <img src={logistics} alt="Logistics icon" />
                     </div>
                     <h5>Logistics & Manufacturing</h5>
                   </div>
@@ -118,10 +136,13 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card5 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
-                    <img src={telecommunication} alt="Telecommunications icon" />
+                      <img
+                        src={telecommunication}
+                        alt="Telecommunications icon"
+                      />
                     </div>
                     <h5>Telecommunications</h5>
                   </div>
@@ -136,7 +157,7 @@ const Clients = () => {
                   </div>
                 </div>
                 {/* card6 */}
-                <div className="clients-indu-cards"  data-aos="fade-up">
+                <div className="clients-indu-cards" data-aos="fade-up">
                   <div className="clients-iconCard">
                     <div className="iconCard">
                       <img src={publicSelector} alt="Public Sector icon" />
@@ -162,10 +183,8 @@ const Clients = () => {
       {/* why choose us component */}
       <WhyChooseUs />
 
-
       {/* home page contact component */}
       <ContactCard />
-
     </>
   );
 };

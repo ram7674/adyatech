@@ -1,6 +1,8 @@
 import React from "react";
 import "./service.css";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+
 import ContactCard from "../../components/ContactCard/ContactCard";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 
@@ -13,9 +15,24 @@ import salesForceImage from "/assets/sales-force.svg";
 import  healthCareItImage from "/assets/health-care-it.svg";
 import cyberSecurImage from "/assets/cyber-security.svg";
 
+
 const Service = () => {
   return (
     <>
+    <Helmet>
+        <title>Services | AdyahTech | IT Solutions & Consulting</title>
+        <meta
+          name="description"
+          content="Adyah Tech offers a wide range of IT services including IT staffing, data science, web development, mobile applications, cloud services, Salesforce solutions, healthcare IT, and cybersecurity."
+        />
+        <meta
+          name="keywords"
+          content="IT staffing, consulting, data science, AI, web development, mobile apps, cloud solutions, Salesforce, healthcare IT, cybersecurity"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
 
       <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>OUR SERVICES</span>

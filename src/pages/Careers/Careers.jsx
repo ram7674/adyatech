@@ -6,11 +6,28 @@ import careersImg from "/assets/careers-Image.svg";
 import careerStartImg from "/assets/carrers-starting.svg";
 import careerSeekImg from "/assets/carrers-seeking.svg";
 
-import ContactCard from "../../../src/components/ContactCard/ContactCard"
+import ContactCard from "../../../src/components/ContactCard/ContactCard";
+import { Helmet } from "react-helmet";
 
 const Careers = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Careers at AdyahTech | Global Opportunities & Challenging Projects
+        </title>
+        <meta
+          name="description"
+          content="Explore career opportunities at Adyah Tech. We offer global exposure, challenging projects, and the chance to work with top-tier clients across various industries."
+        />
+        <meta
+          name="keywords"
+          content="careers, job opportunities, global careers, IT jobs, professional growth, mentorship, challenging projects, innovative IT solutions"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
 
       <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>CAREERS</span>
@@ -36,7 +53,7 @@ const Careers = () => {
             </div>
 
             <div className="col-sm-12 col-md-7 col-lg-6">
-              <div className="careers-descSec"  data-aos="fade-left">
+              <div className="careers-descSec" data-aos="fade-left">
                 <span>WHAT WE OFFER</span>
                 <h3>Unlock Your Potential with Adyah Tech</h3>
                 <p>
@@ -55,10 +72,13 @@ const Careers = () => {
             <div className="col-12">
               <div className="careers-rowContent">
                 {/* card1 */}
-                <div className="careers-rowCard"  data-aos="fade-up">
+                <div className="careers-rowCard" data-aos="fade-up">
                   <div className="careers-desc-card">
                     <div className="careers-card-icon">
-                      <img src={careerStartImg} alt="Starting Your Career Journey" />
+                      <img
+                        src={careerStartImg}
+                        alt="Starting Your Career Journey"
+                      />
                     </div>
                     <h5>Starting Your Career Journey?</h5>
                   </div>
@@ -76,10 +96,10 @@ const Careers = () => {
                   </p>
                 </div>
                 {/* card2 */}
-                <div className="careers-rowCard"  data-aos="fade-up">
+                <div className="careers-rowCard" data-aos="fade-up">
                   <div className="careers-desc-card">
                     <div className="careers-card-icon">
-                    <img src={careerSeekImg} alt="Seeking Fresh Challenges" />
+                      <img src={careerSeekImg} alt="Seeking Fresh Challenges" />
                     </div>
                     <h5>
                       Seeking Fresh Challenges as an Experienced Professional?
@@ -108,7 +128,6 @@ const Careers = () => {
       <WhyChooseUs />
 
       <ContactCard />
-      
     </>
   );
 };

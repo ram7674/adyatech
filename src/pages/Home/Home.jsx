@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
+import { Helmet } from "react-helmet";
 
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
@@ -27,6 +28,57 @@ import iconCyberSecurity from "/assets/icon-cyber-security.svg";
 const Home = () => {
   return (
     <>
+      {/* helmet */}
+      <Helmet>
+        <title>Welcome to AdyahTech | Innovative IT Solutions</title>
+        <meta
+          name="description"
+          content="Empowering your business with cutting-edge IT staffing, data science, and consulting services. Discover tailored IT solutions to drive efficiency, growth, and success."
+        />
+        <meta
+          name="keywords"
+          content="IT staffing, consulting services, data science, web development, mobile applications, cloud services, Salesforce, cybersecurity, healthcare IT"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        {/* Open Graph Meta Tags */}
+        {/* <meta
+          property="og:title"
+          content="Welcome to Adyah Tech | Innovative IT Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Adyah Tech provides IT staffing, consulting, data science, and other IT services to empower businesses in a rapidly evolving digital world."
+        />
+        <meta
+          property="og:image"
+          content="https://adyahtech.com/og-image.jpg"
+        /> */}
+        {/* Replace with actual image URL */}
+
+        {/* <meta property="og:url" content="https://adyahtech.com/" />
+        <meta property="og:type" content="website" /> */}
+
+        {/* Twitter Card Meta Tags */}
+        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Welcome to Adyah Tech | Innovative IT Solutions"
+        />
+        <meta
+          name="twitter:description"
+          content="Empowering your business with cutting-edge IT solutions including IT staffing, data science, web development, and more."
+        />
+        <meta
+          name="twitter:image"
+          content="https://adyahtech.com/twitter-image.jpg"
+        /> */}
+        {/* Replace with actual image URL */}
+        {/* Canonical Link */}
+        {/* <link rel="canonical" href="https://adyahtech.com/" /> */}
+      </Helmet>
+
       {/* home page */}
       <div className="container-fluid hero_section">
         <div className="container">

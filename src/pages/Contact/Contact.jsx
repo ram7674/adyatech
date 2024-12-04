@@ -1,11 +1,14 @@
 import React, { useRef, useState } from "react";
 import "./contact.css";
+import { Helmet } from "react-helmet";
+
 import emailjs from "@emailjs/browser";
 
 import contactImg from "/assets/contact-page-image.svg";
 import contactCallIcon from "/assets/contact-call-icon.svg";
 import contactMaillIcon from "/assets/contact-mail-icon.svg";
 import contactAddressIcon from "/assets/contact-address-icon.svg";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,8 +53,6 @@ const Contact = () => {
 
           //console.log("SUCCESS!");
           window.alert("Email sent successfully!"); // Alert message on success;
-
-          
         },
         (error) => {
           console.error("FAILED...", error.text);
@@ -62,6 +63,21 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contact Us | AdyahTech | Get in Touch for IT Solutions</title>
+        <meta
+          name="description"
+          content="Contact Adyah Tech for IT staffing, data science, web development, mobile applications, and other technology solutions. Get in touch today for customized IT services."
+        />
+        <meta
+          name="keywords"
+          content="contact us, IT staffing, data science, web development, mobile applications, technology solutions, tech services"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
+
       {/* contact main container */}
       <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>CONTACT US</span>
@@ -146,19 +162,39 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="" className="select_bg">Select a service you want ?</option>
-                        <option value="IT Staffing & Consulting" className="select_bg">
+                        <option value="" className="select_bg">
+                          Select a service you want ?
+                        </option>
+                        <option
+                          value="IT Staffing & Consulting"
+                          className="select_bg"
+                        >
                           IT Staffing & Consulting
                         </option>
-                        <option value="Data Science" className="select_bg">Data Science</option>
-                        <option value="Web Development" className="select_bg">Web Development</option>
-                        <option value="Mobile Applications" className="select_bg">
+                        <option value="Data Science" className="select_bg">
+                          Data Science
+                        </option>
+                        <option value="Web Development" className="select_bg">
+                          Web Development
+                        </option>
+                        <option
+                          value="Mobile Applications"
+                          className="select_bg"
+                        >
                           Mobile Applications
                         </option>
-                        <option value="Cloud Services" className="select_bg">Cloud Services</option>
-                        <option value="Cyber Security" className="select_bg">Cyber Security</option>
-                        <option value="SalesForce" className="select_bg">SalesForce</option>
-                        <option value="Health CareIT" className="select_bg">Health CareIT</option>
+                        <option value="Cloud Services" className="select_bg">
+                          Cloud Services
+                        </option>
+                        <option value="Cyber Security" className="select_bg">
+                          Cyber Security
+                        </option>
+                        <option value="SalesForce" className="select_bg">
+                          SalesForce
+                        </option>
+                        <option value="Health CareIT" className="select_bg">
+                          Health CareIT
+                        </option>
                       </select>
                     </div>
 

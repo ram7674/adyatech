@@ -1,5 +1,7 @@
 import React from "react";
 import "./about.css";
+import { Helmet } from "react-helmet";
+
 import ContactCard from "../../components/ContactCard/ContactCard";
 import OurCulture from "../../components/OurCulture/OurCulture";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
@@ -11,6 +13,22 @@ import aboutTeamImg from "/assets/about-team-image.svg";
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          About Us | AdyahTech | IT Solutions & Technology Consulting
+        </title>
+        <meta
+          name="description"
+          content="Adyah Tech is an IT solutions and consulting firm, offering industry-leading services in technology optimization and client-driven IT solutions across the USA and India."
+        />
+        <meta
+          name="keywords"
+          content="IT solutions, technology consulting, IT staffing, data science, business IT solutions, Georgia IT firm, Adyah Tech, IT optimization, offshore development"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
 
       <div className="container-fluid contact-mainBg" data-aos="fade-up">
         <span>ABOUT US</span>
@@ -85,14 +103,11 @@ const About = () => {
         </div>
       </div>
 
-
       {/* why choose us component */}
       <WhyChooseUs />
-  
 
       {/* home page contact card component */}
       <ContactCard />
-
     </>
   );
 };

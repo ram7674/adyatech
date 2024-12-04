@@ -1,11 +1,28 @@
 import React from "react";
 import "./privacypolicy.css";
+import { Helmet } from "react-helmet";
+
 import privacyImage from "/assets/privacy-image.svg";
 import privacyIcon from "/assets/privacy-icon.svg";
+
 
 const PrivacyPolicy = () => {
   return (
     <>
+      <Helmet>
+        <title>Privacy Policy | AdyahTech | Protecting Your Privacy</title>
+        <meta
+          name="description"
+          content="Adyah Tech is committed to protecting your privacy. Learn about how we collect, use, and protect your personal information when you visit our website."
+        />
+        <meta
+          name="keywords"
+          content="privacy policy, personal information, data security, cookies, third-party data hosting, user privacy, Adyah Tech"
+        />
+        <meta name="author" content="AdyahTech" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Helmet>
 
       <div className="container-fluid privacy-mainContainer">
         <div className="container">
@@ -188,13 +205,11 @@ const PrivacyPolicy = () => {
                     </p>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 };
